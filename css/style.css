@@ -1,0 +1,191 @@
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+a:hover,
+a:active{
+	color:#4EA037;
+	font-size:30px;
+	transition-property: font-size;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+body{
+	margin: 0;
+	font: 14px Arial, sans-serif;
+	color: #fff;
+	background-color: #fff;	
+	margin: 0 auto;
+}
+.container{
+	max-width: 1200px
+	margin: 0 auto;
+}
+#top{
+	position: fixed;
+	top:0;
+	right: 0;
+	min-height: 50px;
+	width: 100%;
+	background-color: #ffe;	
+	margin:0;
+	z-index: 12;	
+	text-align: right;
+	
+}
+#top span{
+	color: #000;
+	font-size: 28px;
+	display: none;
+	padding: 20px 30px;
+}
+
+#top a:hover,
+#top a:active{
+	color:#7F7F6E;
+}
+.nav_top ul{
+	padding: 0;
+	margin: 5px 0;
+	
+}
+.nav_top ul li{
+	display: inline-block;
+	margin: 10px;		
+}
+.nav_top  a{
+	font-size: 18px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;	
+	margin: 10px;
+}
+.about{
+	position: relative;
+}
+#about_me img{
+	opacity: .6;
+	min-height: 500px;
+}
+.text{
+	position: absolute;
+	bottom:40%;
+	left:38%;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 3px 2px #000;
+	z-index: 10;
+}
+.text h4{
+	color:purple;
+	font-size: 34px;
+	text-shadow: none;
+	font-weight: bold;
+	-webkit-animation-duration: 4s;
+}
+.text h2{
+	text-transform: uppercase;
+	color:#f4f4f4;
+	font-size: 44px;
+	-webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: 3;
+}
+/*portfolio*/
+#portfolio	{
+	text-align: center;
+	color: #393936;
+	padding:0 0 100px 0;	
+	font-size: 24px;
+	text-transform: uppercase;
+}
+#portfolio h1{
+	-webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 2;
+}
+#portfolio span{
+	display: none;
+	position: absolute;
+	top:0%;
+	left:0%;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	font-size: 22px;	
+	padding-top: 20%;
+}
+#portfolio	.col-md-4 a{
+	margin: 40px 15px;
+}
+#portfolio	.col-md-4 img{
+	max-height: 350px;
+}
+#portfolio a img{
+	opacity:1;
+	transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+}
+#portfolio span h3{
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#portfolio a:hover span{
+	display: block;
+}
+#portfolio a:hover img{
+	opacity: .3;
+}
+/*skills*/
+#skils{
+	padding: 100px;
+}
+#skils h5,
+#skils h2{
+color: #393936;
+text-align: center;
+font-size: 24px;
+text-transform: uppercase;
+line-height: 0;
+margin:20px;
+}
+#skils h2{
+	font-size: 30px;
+	line-height: 1;
+}
+.progress{
+	width: 35%;
+	margin:0 auto;
+}
+/*footer*/
+footer{
+	background-color: #9DCA72;
+	text-align: center;
+}
+
+footer a{
+	font-size: 30px;
+	color:#fff;
+	margin-right: 10px;
+}
+footer .email,
+footer .skype,
+footer .phone{
+ display: block;
+ font-size: 18px;
+ color: blue;
+ margin:5px;
+}
+footer i{
+	color: darkblue;
+	margin:4px 10px;
+}
+.copy{
+	margin:16px auto 0;
+}
