@@ -1,0 +1,411 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	/*header*/
+header{
+	font-size: 15px;
+}
+.navbar-inverse .navbar-nav li>a:after{
+	content: "";
+	margin: 0 12px;
+}
+.logo img{
+	width: 80%;
+}
+/*main*/
+.main_video h1{
+	font-size: 23px;
+	width: 96%;
+	margin:20px auto;
+}
+.courses h2{
+	font-size: 21px;
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+/*header*/
+header{
+	font-size: 14px;
+}
+.logo{
+	position: fixed;
+	top:80%;
+	left: 80%;
+	bottom: 1%;
+	right: 1%;
+	z-index: 1200;
+}
+.navbar-inverse .navbar-nav li>a:after{
+	content: "";
+	margin: 0 8px;
+}
+/*main*/
+.main_video h1{
+	font-size: 24px;
+	width: 96%;
+	margin:20px auto;
+}
+iframe{
+	height: 350px;
+}
+.cours_head h3{	
+	font-size: 11px;
+}
+.courses .img-responsive{
+	width: 90px;
+	height: 90px;
+}
+.category_admin,
+.category_proprammer{
+	margin:10px -10px;
+}
+.admin h2,
+.prog h2{
+	margin:4px;
+	padding: 10px;
+	width: 99%;
+}
+.play_list{
+	height: 280px;
+}
+.play_list span{
+	display: none;
+}
+/*course_detail*/
+.courses .course_detail{
+	width: 84%;
+	margin: 0;
+	padding-left: 0;
+}
+.course_detail .cours_head h3{
+	font-size: 16px;
+	color:#505050;
+	width: 100%;
+}
+.footer_wrapper h2{
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 10px;
+	margin-top:10px;
+}
+footer img{
+	width: 160px;
+}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	/*header*/
+header  ul{
+	padding-right: 0;
+}
+header  ul  li{
+	display: block;
+	width: 100%;
+}
+header  ul  li a{
+	margin:5px auto;
+	padding: 5px!important;
+}
+header  ul  li a:after{
+	display: none;
+}
+.logo img{
+	width: 70%;
+}
+/*main*/
+.main_video h1{
+	font-size: 22px;
+}
+iframe{
+	height: 250px;
+}
+.category_admin,
+.category_proprammer{
+	width: 90%;
+	margin:0 auto;
+}
+.admin_visible h2,
+.prog_visible h2{
+	font-size: 14px;
+}
+.visible_sm{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.courses .main{
+	width: 90%;
+	margin: 0 auto;
+}
+.courses .course_detail{
+	width: 90%;
+	margin: 0 5% 0 3%;
+}
+.course_detail .cours_head{
+	min-height: 30px;
+}
+.block_hide{
+		display: none;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.content{
+	display: none;
+}
+.close{
+	font-size: 30px;
+}
+/*header*/
+.logo img{
+	width: 58%;
+}
+.logo{
+	position: fixed;
+	top:420px;
+	left:220px;
+	bottom:5px;
+	right: 5px;
+}
+.logo img{
+	width: 76%;
+}
+/*main*/
+.admin_visible h2,
+.prog_visible h2{
+	font-size: 10px;
+	margin:10px;
+	width: 96%;
+}
+.all_video{
+	height: 190px;
+}
+.col-md-6 h2{
+	margin:0;
+}
+.category_admin,
+.category_proprammer{
+	margin:15px auto;
+	width: 100%;
+}
+.courses  .row .col-sm-6{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.courses .main{
+	width: 100%;
+}
+.courses .course_detail{
+	width: 92%;
+	margin: 0;
+	padding-left: 0;
+	height: 500px;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+}
+.col-md-4 h3{
+font-size: 10px;
+word-wrap: break-word;
+}
+.col-xs-4{
+	margin-top:10px;
+	padding-right: 5px;
+    padding-left: 5px;
+}
+.video{
+	width: 90%;
+}
+iframe{
+	height: 175px;
+}
+.cours_head{
+	min-height: 50px;
+}
+.courses .img-responsive{
+	width: 70px;
+	height: 70px;
+}
+.q_wrapper .questions p,
+.q_wrapper .questions h3{
+	font-size: 14px;
+}
+.play_list{
+	height: 186px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.q_wrapper .questions h3{
+	margin:20px auto;
+}
+.col-xs-12 ul{
+	padding-left: 30px;
+}
+.col-xs-12 ol{
+	padding-left: 35px;
+	margin: 15px;
+}
+.col-xs-12 ul, 
+.col-xs-12 ol{
+	margin:0 -25px;	
+}
+.course_detail{
+	font-size: 10px;
+	padding: 0px;	
+}
+.course_detail .cours_head{
+	min-height: 20px;
+}
+.course_detail ul>li:before{
+	width: 8px;
+	height: 8px;
+	margin-left:0;
+}
+.course_detail ul>li a{
+	margin-left:0;
+}
+.course_detail h3{
+	font-size: 13px;
+	color:#505050;
+	width: 100%;
+}
+#search .close{
+	margin: 5px 12px;
+}
+#news .close{
+	margin:-2px 3px;
+}
+#news .header_news h2{
+	font-size: 16px;
+	margin: 5px auto 0;
+}
+#news .all_new{
+	padding: 10px 0;
+}
+#news .all_new div{
+	padding: 0;
+}
+#news .all_new div{
+	font-size: 14px;
+}
+#news .new div{
+	font-size: 11px;
+}
+#register div h3{
+	font-size: 15px;
+}
+#register div p{
+	font-size: 14px;
+}
+#register div div{
+	margin:10px auto;
+}
+#register .main_section{
+	padding: 5px;
+}
+#login .modal-content{
+	width: 90%;
+	padding:10px;
+}
+#login img{
+	width: 70px;
+}
+#login form p{
+	font-size: 16px;
+	margin:15px 3px 5px;
+}
+#login .modal-dialog{
+	margin-top: 25px;
+}
+#login .login .close{
+	line-height: 2;
+	padding:8px 6px 0 0;
+}
+#login form input[type=text]{
+	font-size: 16px;
+}
+#login form input[type=submit]{
+	margin-top: 20px;
+}
+/*footer*/
+footer .footer_wrapper{
+	padding-top: 10px;
+}
+.footer_wrapper h2{
+	font-size: 10px;
+	margin:0px auto 5px;
+}
+footer .img-responsive{
+	padding:0;
+}
+footer .logo_footer img{
+	width: 20%;
+	margin-bottom: 0;
+}
+body #search .modal-body .result_search,
+body #search .modal-body .result{
+	padding: 0;
+	margin:0 auto;
+	width: 340px;
+	font-size: 14px;	
+}
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+body #search .modal-body .result_search,
+body #search .modal-body .result{
+	padding: 0;
+	margin:0;
+	width: 290px;
+	font-size: 13px;	
+}
+#result {
+	margin: 0 auto;
+}
+.result_search form input[type=submit],
+.result_search form input[type=text]{
+	font-size: 14px!important;
+}
+#result .result{
+	padding: 0!important;
+}
+body .course_detail{
+	width: 90%;
+	margin-left:-20px;
+	padding-top: 0;
+	z-index: 10001;
+}
+.course_detail .cours_head {
+min-height: 0;
+padding: 0;
+}
+.detail {
+  max-width: 300px;
+}
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
