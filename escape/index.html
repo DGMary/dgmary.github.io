@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test rooms</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <header>
+	<div class="wrapper_head container">
+	  <div class="bg_header row">
+		<nav>
+		  <div class="wrapper">
+			<div class="menuToggle">Menu</div>
+			<ul class="menu clearfix">
+			  <li><a href="#">All escapes</a></li>
+			  <li><a href="#">Gift card</a></li>
+			  <li><a href="#">Show on map</a></li>
+		      <li><a href="#">Reviews</a></li>
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Add escape</a></li>
+			</ul>
+		  </div>			
+		</nav>
+		<div class="text_header">
+		  <h1>All Escape games in the USA</h1>
+		  <h2>Find an escape room near you</h2>
+		</div>
+		<div class="form_header">
+		  <form method="post">
+			<label for="city" class="city icon">City:</label>
+			<input type="text" id="city" placeholder="input your city" required autofocus>
+			<div class="form_select">
+			<label for="genre" class="genre icon">Genre:</label>
+			<select name="genre" id="genre" required >
+			  <option>Choice your genge</option>
+			  <option value="quests">Most quests</option>
+			  <option value="recommended">Recommended</option>
+			  <option value="performance">Performance </option>
+			  <option value="action">Action</option>
+			  <option value="largCompany">For a large company </option>
+			  <option value="kids">With kids</option>
+			  <option value="terrible">Terrible(Horror)</option>
+			  <option value="for two">For two</option>
+			  <option value="adults">18+</option>
+			  <option value="bank">Bank</option>
+			  <option value="favorite">Favorite characters</option>	
+			  <option value="jail"> Jail</option>	
+			  <option value="fantastic">Fantastic</option> 			
+			</select>
+			</div>
+			<div class="form_select">
+			<label for="person" class="person icon">Person:</label>
+			<select name="person" id="persons">
+			  <option>choice person’s</option>
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			  <option>6</option>
+			  <option>7</option>
+			  <option>8</option>
+			  <option>9</option>			
+			</select></div>
+			<input type="submit" value="find">		
+		  </form>
+		</div>
+		<div class="container container_items">
+		  <div class="items row">
+			<div class="col-xs-6 col-sm-1">
+			   <div class="enter_icon  icon"></div>
+			</div>
+			<div class="hidden-xs col-sm-2">			 
+			  <h4>All escape there</h4>
+			</div>		 
+			<div class="col-xs-6 col-sm-1">
+			   <div class="price_icon  icon"></div>
+			</div>
+			<div class="hidden-xs col-sm-2">			 
+			  <h4>Best price</h4>
+			</div>			 
+			<div class="col-xs-6 col-sm-1">
+			   <div class="booking_icon  icon"></div>
+			</div>
+			<div class="hidden-xs col-sm-2">		 
+			  <h4>Easy booking</h4>
+			</div>			 
+			<div class="col-xs-6 col-sm-1">
+			  <div class="reviews_icon  icon"></div>
+			</div>
+			<div class="hidden-xs col-sm-2">		 
+			  <h4>Fair reviews</h4>
+			</div>			 
+		  </div>		
+		</div>
+	  </div>
+	</div>
+  </header>
+  <main>
+	  <div class="container">	
+		<div class="row">
+		  <div class="head_rooms">
+			<div class="hidden-xs col-md-8">
+			  <h3>popular rooms in city</h3>
+			</div>
+			<div class="col-xs-12 col-md-4">
+			  <h3>Company of the week</h3>
+			</div>
+		  </div>
+		</div>		
+		<div class="row">
+		<!--sidebar-->
+		  <div class="col-xs-12 col-md-4 sidebar">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room3.jpg" alt="room">
+				<div class="information">
+				<div class="brain icon"></div>
+				<div class="reiting icon hover_hide five_stars">Reiting</div>
+				<div class="user icon">2-4</div>
+				<div class="time icon">45 min.</div>
+				<div class="room_hover">
+	 			  <span>You have been accused of murder  and are on the run from...</span>
+				  <div class="reiting icon five_stars">Reiting </div>
+				</div>				
+				</div>
+			  </div>
+				<h5>magic adventure</h5>
+				<div class="text_sidebar">		  
+				  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				  <input type="button" value="read more">
+				</div>						
+			</div>	
+		  </div><!-- end sidebar -->
+		  <div class="col-xs-12 col-sm-6 col-md-4">
+		    <div class="row head_rooms">
+			  <div class="visible-xs align-center">
+				<h3>popular rooms in city</h3>
+			  </div>
+			</div>	
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room1.jpg" alt="room">
+				<div class="information">
+				<div class="brain icon"></div>
+				<div class="reiting icon hover_hide five_stars">Reiting</div>
+				<div class="user icon">2-4</div>
+				<div class="time icon">45 min.</div>
+				<div class="room_hover">
+				  <span>You have been accused of murder  and are on the run from...</span>
+				  <div class="reiting icon five_stars">Reiting </div>
+			 	</div>
+				</div>
+	 		  </div>
+				<h5>x-files story</h5>
+				<div class="hide_text">						  
+		     	  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				  <input type="button" value="read more">
+				</div>						
+			</div>
+		  </div>					
+		  <div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+				<div class="information">
+				<div class="brain icon"></div>
+				<div class="reiting icon hover_hide">Reiting</div>
+				<div class="user icon">2-8</div>
+				<div class="time icon">60 min.</div>
+				<div class="room_hover">
+				  <span>You have been accused of murder  and are on the run from...</span>
+				  <div class="reiting icon">Reiting </div>
+				</div>
+				</div>
+			  </div>
+				<h5>Escape from the Hound of the Baskervilles</h5>
+				<div class="hide_text">						  
+				  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				  <input type="button" value="read more">
+				</div>						
+			</div>
+		  </div>						
+		  <div class="hidden-xs hidden-sm col-md-4">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+			   <div class="information">
+				<div class="brain icon"></div>
+				<div class="reiting icon hover_hide">Reiting</div>
+				<div class="user icon">2-8</div>
+				<div class="time icon">60 min.</div>
+				<div class="room_hover">
+				  <span>You have been accused of murder  and are on the run from...</span>
+				  <div class="reiting icon">Reiting </div>
+				</div>
+			   </div>
+			  </div>
+				<h5>Escape from the Hound of the Baskervilles</h5>
+				<div class="hide_text">						  
+				  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				  <input type="button" value="read more">
+				</div>						
+			</div>
+		  </div>
+		  <div class="hidden-xs hidden-sm col-md-4">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room1.jpg" alt="room">
+			   <div class="information">
+				<div class="brain icon"></div>
+				<div class="reiting icon hover_hide">Reiting</div>
+				<div class="user icon">2-8</div>
+				<div class="time icon">60 min.</div>
+				<div class="room_hover">
+				  <span>You have been accused of murder  and are on the run from...</span>
+				  <div class="reiting icon">Reiting </div>
+				</div>
+			   </div>
+			  </div>
+				<h5>Escape from the Hound of the Baskervilles</h5>
+				<div class="hide_text">						  
+				  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				  <input type="button" value="read more">
+			    </div>						
+			</div>
+		  </div>
+	    </div>
+		<div class="row other_rooms">
+		  <div class="col-xs-6 col-md-3">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+				<div class="information">
+				  <div class="brain icon"></div>
+				  <div class="reiting icon hover_hide">Reiting</div>
+				  <div class="user icon">2-8</div>
+				  <div class="time icon">60 min.</div>
+				  <div class="room_hover">
+					<span>You have been accused of murder  and are on the run from...</span>
+					<div class="reiting icon">Reiting </div>
+					</div>
+				</div>
+			  </div>
+			  <h5>Escape from the Hound of the Baskervilles</h5>
+			  <div class="hide_text">					  
+				<p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				<input type="button" value="read more">
+			  </div>						
+			</div>
+		  </div>
+		  <div class="col-xs-6 col-md-3">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+				<div class="information">
+				  <div class="brain icon"></div>
+				  <div class="reiting icon hover_hide">Reiting</div>
+				  <div class="user icon">2-8</div>
+				  <div class="time icon">60 min.</div>
+				  <div class="room_hover">
+					<span>You have been accused of murder  and are on the run from...</span>
+					<div class="reiting icon">Reiting </div>
+				  </div>
+				</div>
+			  </div>
+			  <h5>Escape from the Hound of the Baskervilles</h5>
+			  <div class="hide_text">						  
+				<p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				<input type="button" value="read more">
+			  </div>						
+			</div>
+		  </div>
+		  <div class="col-xs-6 col-md-3">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+				<div class="information">
+				  <div class="brain icon"></div>
+				  <div class="reiting icon hover_hide">Reiting</div>
+				  <div class="user icon">2-8</div>
+				  <div class="time icon">60 min.</div>
+				  <div class="room_hover">
+					<span>You have been accused of murder  and are on the run from...</span>
+					<div class="reiting icon">Reiting </div>
+				  </div>
+				</div>
+			  </div>
+				<h5>Escape from the Hound of the Baskervilles</h5>
+				<div class="hide_text">					  
+				  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				  <input type="button" value="read more">
+				</div>						
+			</div>
+		  </div>
+		  <div class="col-xs-6 col-md-3">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+				<div class="information">
+				  <div class="brain icon"></div>
+				  <div class="reiting icon hover_hide">Reiting</div>
+			      <div class="user icon">2-8</div>
+				  <div class="time icon">60 min.</div>
+				  <div class="room_hover">
+					<span>You have been accused of murder  and are on the run from...</span>
+					<div class="reiting icon">Reiting </div>
+				  </div>
+				</div>
+			  </div>
+				<h5>Escape from the Hound of the Baskervilles</h5>
+				<div class="hide_text">						  
+				  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				  <input type="button" value="read more">
+				</div>						
+			</div>
+		  </div>
+		  <div class="col-xs-6 col-md-3">
+		    <div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+				<div class="information">
+				  <div class="brain icon"></div>
+				  <div class="reiting icon hover_hide">Reiting</div>
+				  <div class="user icon">2-8</div>
+				  <div class="time icon">60 min.</div>
+				  <div class="room_hover">
+				    <span>You have been accused of murder  and are on the run from...</span>
+					<div class="reiting icon">Reiting </div>
+				  </div>
+				</div>
+			  </div>
+				<h5>Escape from the Hound of the Baskervilles</h5>
+				<div class="hide_text">					  
+				  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+			      <input type="button" value="read more">
+				</div>						
+			</div>
+		  </div>
+		  <div class="col-xs-6 col-md-3">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+				<div class="information">
+				  <div class="brain icon"></div>
+				  <div class="reiting icon hover_hide">Reiting</div>
+				  <div class="user icon">2-8</div>
+				  <div class="time icon">60 min.</div>
+				  <div class="room_hover">
+					<span>You have been accused of murder  and are on the run from...</span>
+					<div class="reiting icon">Reiting </div>
+				  </div>
+				</div>
+			  </div>
+				<h5>Escape from the Hound of the Baskervilles</h5>
+				<div class="hide_text">					  
+				  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				  <input type="button" value="read more">
+				</div>						
+			</div>
+		  </div>
+		  <div class="hidden-xs hidden-sm col-md-3">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+				<div class="information">
+				  <div class="brain icon"></div>
+				  <div class="reiting icon hover_hide">Reiting</div>
+				  <div class="user icon">2-8</div>
+				  <div class="time icon">60 min.</div>
+				  <div class="room_hover">
+				    <span>You have been accused of murder  and are on the run from...</span>
+					<div class="reiting icon">Reiting </div>
+				  </div>
+				</div>
+			  </div>
+			  <h5>Escape from the Hound of the Baskervilles</h5>
+			  <div class="hide_text">					  
+				<p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				<input type="button" value="read more">
+			  </div>						
+			</div>
+		  </div>
+		  <div class="hidden-xs hidden-sm col-md-3">
+			<div class="wrapper_room main">
+			  <div class="room"><img src="images/room2.jpg" alt="room">
+				<div class="information">
+				  <div class="brain icon"></div>
+				  <div class="reiting icon hover_hide">Reiting</div>
+				  <div class="user icon">2-8</div>
+				  <div class="time icon">60 min.</div>
+				  <div class="room_hover">
+				  <span>You have been accused of murder  and are on the run from...</span>
+				  <div class="reiting icon">Reiting </div>
+				  </div>
+				</div>
+			  </div>
+				<h5>Escape from the Hound of the Baskervilles</h5>
+				<div class="hide_text">					  
+				  <p>You have been accused of murder and are on the run from the police while you try to clear your name. Search the crime scene for clues to determine the identity of the real murderer, the weapon used, and the motive behind the crime before the police arrive.</p>
+				  <input type="button" value="read more">
+				</div>						
+			</div>
+		  </div>
+		</div>					
+		<div class="row button_load">
+		  <div class="col-md-12">
+			<input type="button" value="load more">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-md-12">
+			<div class="video">
+			  <img src="images/video.jpg" alt="video">
+			  <div class="relation">
+				<div class="col-xs-6">
+				  <h3>how to choose an escape room?</h3>
+				  <input type="button" value="play video"><div class="icon icon_play"></div>
+				</div>
+			  <div class="col-xs-6">
+				<a href="#"><span class="icon icon_play_big"></span></a>
+			  </div>
+			  </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="container">	
+		  <div class="row">
+			<div class="text_under_video">
+			  <h5>What is a real-life room escape game?</h5>
+			  <p>Today a company of 2-5 friends should not be considering for long what to do in their free time anymore, in case all the new released films have been watched and no one is hungry. A new type of entertainment - real escape games - has emerged in Japan and China in 2007 and quickly spread to the USA and Europe. That is an adventure game in which you are locked with your friends and have to solve a series of puzzles and riddles in order to escape the room within a particular time limit. This game partly reminds of a scavenger hunt but inside the building, partly of computer game. The intellectual part of this entertainment is attracting more and more people all over the world. What else is so enticing about escape rooms?</p>
+			  <p>The task is to get out the room, which is decorated according to a particular theme, in one hour. Mobile phones, tablets - all of them has to remain outside the room, so you can devote all your time to hunting for clues and solving puzzles. The only methods you are allowed to apply is your quickness of wit, smartness, and logic. Nowadays it feels extraordinary to stay away from your mobile device for an hour. If on top of that you become a hero of an incredible adventure - be sure to absolutely enjoy this game.</p>
+			  <p>If you have decided to escape the room, be prepared for a dense variety offered by different companies in your city. You may find yourself in an escape room hint hunting and solving logic tasks. In contrast, you might end up in a real-life quest where you will also enjoy an intriguing plot as in a good detective story.</p>
+		    </div>					
+		  </div>
+		</div>
+	  </div>	
+  </main>
+  <footer class="container-fluid">
+	<div class="container">
+	  <div class="row">
+		<div class="col-xs-6 col-sm-3 col-md-3">
+		  <ul>
+			<li><a href="#">All escapes</a></li>
+			<li><a href="#">Gift card </a></li>
+			<li><a href="#">Show on map</a></li>
+			<li><a href="#">Reviews  </a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Add escape</a></li>				  
+		  </ul>				
+		</div>
+		<div class="hidden-xs col-sm-6 col-md-6 footer_text">
+		  <p>EscapeRoomPlace is a directory website which collects information about escape rooms all over the world.</p><p>We provide ratings and reviews on various real escape rooms to enable players to choose a game which matches their needs.</p>
+		  <span class="privacy">Privacy Policy</span>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-3 social">
+		  <a href="#" title="Facebook" target="_blank"><span class="fb icon"></span></a>
+		  <a href="#" title="Twitter" target="_blank"><span class="twitter icon"></span></a>
+		  <a href="#" title="Instagram" target="_blank"><span class="instagram icon"></span></a>			
+		</div>
+		</div>
+		</div>		
+  </footer>
+<script src="js/jquery-3.2.0.slim.min.js"></script>
+<script src="js/main.js"></script>	
+</body>
+</html>

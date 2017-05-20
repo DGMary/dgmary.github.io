@@ -1,0 +1,273 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+body{
+		font-size: 18px;
+	}
+.wrapper_head  li:before{
+	margin-left: 6px;
+	margin-right: 6px;
+	height: 26px;
+}
+.wrapper_head  li  a{
+	margin:0px 6px 0px 6px;
+}
+.items h4{
+	font-size: 22px;
+	padding: 1% 18% 1% 20%;
+}
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+body{
+		font-size: 16px;
+}
+.wrapper_head  li:before{
+	margin-left: 3px;
+	margin-right: 3px;
+	height: 20px;
+}	
+.wrapper_head  li  a{
+	margin:0px 3px 0px 3px;
+}
+.items h4{
+	font-size: 20px;
+	padding: 1% 1% 1% 50%;
+}
+.other_rooms h5{
+	font-size: 14px;
+}
+.video h3{
+	font-size: 25px;
+	margin: 20px 20px 10px;
+}
+.icon_play_big{
+	padding:30px;
+	margin: 0 30%;
+}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.text_header h1{
+	font-size:30px;
+	line-height: .3;
+	margin-top: -10px;
+}
+.text_header h2{
+	font-size:20px;
+	line-height: .6;
+	margin-top: 0px;
+}
+.menuToggle{
+		display: inline-block;
+	}
+.menu{
+		display: none;
+		position: absolute;
+		top:26px;
+		left: 30%;
+	}
+header .menu  li{
+		display: block;
+		background:rgb(240, 240, 240);	
+	}
+	.wrapper_head  li:before{
+		display: none;
+	}
+.item {
+position: relative;
+border:1px solid blue;
+width: 101px;
+height: 101px;
+}
+.item .col-xs-2{
+	border:1px solid red;
+	position: absolute;
+	top: 100%;
+
+}
+.icon_play_big{
+	display: none;
+}
+.video h3{
+	margin: 5%;
+}
+.video input[type=button]{
+	font-size: 14.5px;
+	padding: 10px 46px 10px 20px;
+	margin: 20px  0px 50px 50px;
+	position: absolute;
+	top: 20%;
+	left: 100%;
+
+}
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+header .menu{
+	margin: 5px 0;
+	text-align: center;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.text_header{
+	margin:  0;
+}
+.text_header h1{
+	font-size: 24px;
+}
+.text_header h2{
+	line-height: 2;
+}
+.head_rooms h3{
+	font-size: 18px;
+}
+.information{
+	display: none;
+}
+main .wrapper_room{
+	margin: 10px 0;
+	padding:5px;
+}
+main .wrapper_room h5{
+	font-size: 15px;
+	margin: 5px 0;
+}
+.items{
+	text-align: center;
+}
+.container_items{
+	margin-top: -50px;
+}
+/*form*/
+.form_header{
+	width: 98%;
+}
+.form_header label{
+	font-size: 16px;
+	margin:0;
+}
+.form_header select{
+	font-size: 14px;
+	margin:5px 0;
+	width: 160px;
+}
+.form_header input[type=submit]{
+	margin:0 auto;
+	width: 33%;
+}
+.head_rooms  h3{
+	text-align: center;
+	font-weight: bold;
+}
+/*sidebar*/
+.sidebar .text_sidebar{
+	padding: 0;
+}
+.sidebar .text_sidebar p{
+	font-size: 14px;
+	display: none;
+}
+.sidebar .text_sidebar input{
+	font-size: 15px;
+	padding: 5px;
+	margin: 0;
+}
+.other_rooms .wrapper_room h5{
+	font-size: 12px;
+}
+.button_load input[type=button]{
+	font-size: 18px;
+	padding: 10px 15px;
+}
+.video h3{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+.video input[type=button]{
+	font-size: 10px;
+	left: 70%;
+	top:1%;
+	padding: 10px 20px
+}
+.video .icon_play{
+	display: none;
+}
+.text_under_video h5{
+	font-size: 20px;
+	margin: 20px;
+}
+.text_under_video p{
+	display: none;
+}
+footer ul{
+	padding: 0;
+}
+footer .social{
+	padding:15% 0;
+}
+footer .social span{
+	margin: 0
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

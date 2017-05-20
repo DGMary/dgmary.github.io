@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>MyPortfolio</title>
+	<title>Мынкина Мария.Портфолио верстальщика</title>
 	<meta charset="UTF-8">
-    <meta name="description" content="MyPortfolio">
-    <meta name="keywords" content="HTML,CSS,JavaScript,bootstrap,portfolio">
-    <meta name="author" content="Mynkina">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content="Мынкина Мария.Верстальщик">
+    <meta name="keywords" content="Портфолио, верстка, html, css, адаптивная, кроссбраузерная, резюме, фронтенд, frontend, adaptive, html5, css3, bootstrap,markup, верстка, портфолио верстальщика, верстка сайтов, html-верстка, flex">
+    <meta name="description" content="Люблю адаптивную и кроссбраузерную верстку, чистый и лаконичный код, pixel perfect.">	
 	<link rel="icon" href="images/html5_css3.png" type="image/x-icon">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
@@ -29,50 +29,58 @@
 		<span class="burger"><i class="fa fa-bars" aria-hidden="true"></i></span>
 	</nav>
 </header>
-<section id="about_me" class="about">
+<div id="about_me" class="about">
 	<div class="text">
 	<h4 class="animated zoomIn">Привет, меня зовут Мария</h4>
-	<h2 class="animated zoomIn">я начинающий верстальщик</h2>
+	<h2 class="animated zoomIn">Я HTML-верстальщик</h2>
+	<h5 class="animated zoomIn">Верстаю  сайты адаптивно, валидно, кроссбраузерно</h5>
 	</div>
-	<img src="images/sec3.jpg" alt="img">	
-</section>
+</div>
 <!--portfolio-->
 <section id="portfolio" >
 <div class="jumbotron">
 <div class="container">
 <div class="row">
-<h1 class="animated bounceIn">Мои работы</h1>
-	<div class="col-xs-12 col-sm-6 col-md-4">
+<h1 class="animated bounceIn">Портфолио</h1>
+	<div class="col-xs-12 col-sm-4 col-md-3">
 	  <a href="bike/index.html" class="thumbnail">
-	  <img src="images/bike.jpg" alt="bike">
+	  <img src="images/bike.jpg" alt="bike markup">
 	  <span><h3>Bike</h3><br><p>Адаптивная верстка</p><p>flex-box</p></span>
 	  </a>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="col-xs-12 col-sm-4 col-md-3">
 	  <a href="web/index2.html" class="thumbnail">
-	  <img src="images/web.jpg" alt="web">
+	  <img src="images/web.jpg" alt="markup">
 	  <span><h3>Web Design</h3><br><p>Адаптивная верстка</p><p>слайдер</p></span>
 	  </a>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="col-xs-12 col-sm-4 col-md-3">
 	  <a href="photo/index1.html" class="thumbnail">
-	  <img src="images/photo.jpg" alt="photo">
+	  <img src="images/photo.jpg" alt="markup">
 	  <span><h3>Photo</h3><br><p>My first project</p></span>
 	  </a>
 	</div>	
-	<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="col-xs-12 col-sm-4 col-md-3">
 	  <a href="Landau/index3.html" class="thumbnail">
-	  <img src="images/dou.jpg" alt="photo">
+	  <img src="images/dou.jpg" alt="markup">
 	  <span><h3>Lev Landau</h3><br><p>Адаптивная верстка</p><p>bootstrap</p><a href="https://codepen.io/DGMary/#">my profile CODEPEN</a></span>
 	  </a>
 	</div>
 
-	<div class="col-xs-12 col-sm-6 col-md-4">
+	<div class="col-xs-12 col-sm-4 col-md-3">
 	  <a href="practicu/index.html" class="thumbnail">
-	  <img src="practicu/practicu.jpg" alt="photo">
-	  <span><h3>Practicu</h3><br><p>My project Practicu</p><p>Grid, Modal.js</p><p> Bootstrap</p></span>
+	  <img src="practicu/practicu.jpg" alt="markup">
+	  <span><h3>Practicu</h3><br><p>Grid, Modal.js</p><p> Bootstrap</p></span>
 	  </a>
-	</div>		
+	</div>	
+
+	<div class="col-xs-12 col-sm-4 col-md-3">
+	  <a href="escape/index.html" class="thumbnail">
+	  <img src="escape/escape.jpg" alt="markup">
+	  <span><h3>Escape</h3><br><p> Bootstrap 3</p></span>
+	  </a>
+	</div>	
+
 	</div>
 	</div>
 	</div>
@@ -80,7 +88,7 @@
 <!--skils-->
 <section id="skils">
 <h2>мои навыки</h2>
-<h5>html</h5>
+<h5>html </h5>
 <div class="progress">
   <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
     <span class="sr-only">80% Complete (success)</span>
@@ -121,5 +129,6 @@
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="js/slick.min.js" type="text/javascript"></script>
   <script src="js/main.js" type="text/javascript"></script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

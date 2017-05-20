@@ -35,8 +35,7 @@ body{
 	background-color: #ffe;	
 	margin:0;
 	z-index: 12;	
-	text-align: right;
-	
+	text-align: right;	
 }
 #top span{
 	color: #000;
@@ -68,14 +67,12 @@ body{
 .about{
 	position: relative;
 }
-#about_me img{
-	opacity: .6;
-	min-height: 500px;
+#about_me{
+min-height: 300px;
+background: #29ccb6;
 }
 .text{
-	position: absolute;
-	bottom:40%;
-	left:38%;
+	margin-top: 50px;
 	text-align: center;
 	color: #fff;
 	font-weight: bold;
@@ -83,30 +80,41 @@ body{
 	z-index: 10;
 }
 .text h4{
-	color:purple;
+	color: #003e3e;
 	font-size: 34px;
+	line-height: 3;
 	text-shadow: none;
 	font-weight: bold;
-	-webkit-animation-duration: 4s;
+	-webkit-animation-duration: 5s;
 }
 .text h2{
+	color:#fff;
 	text-transform: uppercase;
-	color:#f4f4f4;
 	font-size: 44px;
+	text-shadow: none;
 	-webkit-animation-duration: 8s;
-  -webkit-animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 1;
+}
+.text h5{
+	text-shadow: none;
+	line-height: 4;
+	color: #003e3e;
+	font-size: 20px;
 }
 /*portfolio*/
 #portfolio	{
 	text-align: center;
 	color: #393936;
-	padding:0 0 100px 0;	
+	padding:0 0 50px 0;	
 	font-size: 24px;
 	text-transform: uppercase;
+	margin-top: -20px;
 }
 #portfolio h1{
 	-webkit-animation-duration: 5s;
     -webkit-animation-iteration-count: 2;
+    line-height: 2;
+    color: #044f64;
 }
 #portfolio span{
 	display: none;
@@ -122,8 +130,8 @@ body{
 #portfolio	.col-md-4 a{
 	margin: 40px 15px;
 }
-#portfolio	.col-md-4 img{
-	max-height: 350px;
+#portfolio	.col-md-3 img{
+	max-height: 270px;
 }
 #portfolio a img{
 	opacity:1;
@@ -144,7 +152,7 @@ body{
 }
 /*skills*/
 #skils{
-	padding: 100px;
+	padding: 0 0 50px 0;
 }
 #skils h5,
 #skils h2{
@@ -167,6 +175,7 @@ margin:20px;
 footer{
 	background-color: #9DCA72;
 	text-align: center;
+	padding: 20px;
 }
 
 footer a{
