@@ -173,7 +173,7 @@ margin:20px;
 }
 /*footer*/
 footer{
-	background-color: #9DCA72;
+	background-color: #12aab9;
 	text-align: center;
 	padding: 20px;
 }
@@ -188,12 +188,15 @@ footer .skype,
 footer .phone{
  display: block;
  font-size: 18px;
- color: blue;
+ color: #014a49;
  margin:5px;
 }
 footer i{
-	color: darkblue;
+	color: #014a49;
 	margin:4px 10px;
+}
+footer i:hover{
+	color:#01137f;
 }
 .copy{
 	margin:16px auto 0;
