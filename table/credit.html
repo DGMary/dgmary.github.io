@@ -7,7 +7,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Банк</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui"
+	/>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -21,6 +22,20 @@
 </head>
 
 <body>
+	<style>
+	td, th {
+    display: table-cell;
+    vertical-align: inherit;
+	}
+	thead{
+		background-color: #fcefe5;
+	}
+	tbody {
+		display: table-row-group;
+		vertical-align: middle;
+		border-color: inherit;
+	}
+</style>
 
 	<div class="wrapper">
 
@@ -34,8 +49,10 @@
 
 					<div class="nav_menu">
 						<span class="hidden-lg">
-							<a href="#" class="nav_link "><i class="material-icons">language</i>Интернет банк</a>
-							<a href="#" class="nav_link "><i class="material-icons">place</i>Банкоматы и отделения</a>
+							<a href="#" class="nav_link ">
+								<i class="material-icons">language</i>Интернет банк</a>
+							<a href="#" class="nav_link ">
+								<i class="material-icons">place</i>Банкоматы и отделения</a>
 						</span>
 
 						<div class="nav_menu__link burger" data-menu-opener>
@@ -52,495 +69,594 @@
 			</div>
 		</nav>
 
-		<div class="container" data-credits-page>
+		<div data-credits-page>
 			<!-- breadcrumbs -->
-			<ul class="breadcrumbs">
-				<li class="breadcrumbs_item">
-					<a href="#">Главная</a>
-				</li>
-				<li class="breadcrumbs_item">
-					<a href="#">Кредитование</a>
-				</li>
-			</ul>
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs_item">
+						<a href="#">Главная</a>
+					</li>
+					<li class="breadcrumbs_item">
+						<a href="#">Кредитование</a>
+					</li>
+				</ul>
 
-			<h1 class="page-title">Кредитование</h1>
+				<h1 class="page-title">Кредитование</h1>
 
-			<div class="btn btn-white credit-btn hidden-lg" data-popup-opener="feedback">
-				<input type="button">
-				<span class="btn_text"><i class="material-icons"></i> Обратная связь</span>
+				<div class="btn btn-white credit-btn hidden-lg" data-popup-opener="feedback">
+					<input type="button">
+					<span class="btn_text">
+						<i class="material-icons"></i> Обратная связь</span>
+				</div>
 			</div>
 
-			<div class="block-shadow -deposit">
+
+			<div class="block-shadow deposit">
 				<div class="t_report">
 					<div class="deposittable2">&nbsp;
-						<div id="wrap">
-							<table class="table_tarif2" style="width: 100%;" border="0">
-								<tbody>
-									<thead>
-										<tr id="kepka">
-											<th colspan="1">&nbsp;</th>
-											<th>Легкий старт</th>
-											<th>Мастер</th>
-											<th class="tdpr">Профессионал
-												<div class="btn prof_btn" data-popup-opener="form_construct_121"><input type="button" /><span class="btn_text">ПОДКЛЮЧИТЬ</span></div>
-											</th>
-											<th>Эксперт</th>
-											<th>Лидер</th>
-										</tr>
-									</thead>
-									<tr>
-										<td class="h_tarif2" rowspan="1" colspan="6">Открытие и введение счета</td>
-									</tr>
-									<tr>
-										<td class="th2">Открытие счета, подготовка документов, резервирование номера</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdpr">
-											<div class="fx">БЕСПЛАТНО</div>
-											<div class="ieShadow">&nbsp;</div>
-										</td>
-										<td class="tdf">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="th2">Ведение счета<br />(в месяц)</td>
-										<td>
-											<div class="fx">ВСЕГДА<br />БЕСПЛАТНО</div>
-										</td>
-										<td>первые 2 месяца<br />БЕСПЛАТНО,<br />
-											<div class="tx">900<span class="b-rub">Р</span> с 3 месяца</div>
-										</td>
-										<td class="tdpr">2 900<span class="fa fa-rub">&nbsp;</span></td>
-										<td class="tdf">3 900<span class="fa fa-rub">&nbsp;</span></td>
-										<td>5 900<span class="fa fa-rub">&nbsp;</span></td>
-									</tr>
-									<tr>
-										<td class="th2">Бесплатно<br />при среднемесячном остатке за прошлый месяц на расчетном счете</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>-</td>
-										<td class="tdpr">Свыше<br /> 3 000 000<span class="b-rub">Р</span></td>
-										<td class="tdf">Свыше<br /> 5 000 000<span class="b-rub">Р</span></td>
-										<td>Свыше<br /> 10 000 000<span class="b-rub">Р</span></td>
-									</tr>
-									<tr>
-										<td class="th2" colspan="1">Онлайн зачисления и списания</td>
-										<td>-</td>
-										<td>-</td>
-										<td class="tdpr">+ 3 000<span class="b-rub">Р</span> в месяц</td>
-										<td class="tdf">+ 3 000<span class="b-rub">Р</span> в месяц</td>
-										<td>+ 3 000<span class="b-rub">Р</span> в месяц</td>
-									</tr>
-									<tr>
-										<td class="th2" rowspan="2" colspan="1">Проценты на остаток</td>
-										<td class="line-tr" colspan="2">Минимальный остаток от&nbsp;300&nbsp;000<span class="b-rub">Р</span>
-											<div class="line-vertik">&nbsp;</div>
-										</td>
-										<td class="tdpr" rowspan="2" colspan="1">-</td>
-										<td class="tdf" rowspan="2" colspan="1">-</td>
-										<td class="ltd" rowspan="2" colspan="1">-</td>
-									</tr>
-									<tr class="trb">
-										<td class="ltd" rowspan="1" colspan="1">6% годовых<br />
-											<div class="tx">( до 3 000<span class="b-rub">Р</span> в месяц)</div>
-										</td>
-										<td colspan="1">7% годовых<br />
-											<div class="tx">( до 5 000<span class="b-rub">Р</span>&nbsp;в месяц)</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="h_tarif2" rowspan="1" colspan="6">Переводы на счет юридических лиц и индивидуальных
-											предпринимателей (с 9.00 до 20.00)</td>
-									</tr>
-									<tr>
-										<td class="th2" colspan="1">Бесплатные переводы в месяц</td>
-										<td>5</td>
-										<td>
-											<div class="bx">10</div>
-										</td>
-										<td class="tdprf">15</td>
-										<td class="tdf">20</td>
-										<td class="td-s" rowspan="6" colspan="1">ВСЕ<br />БЕСПЛАТНО</td>
-									</tr>
-									<tr>
-										<td class="th2" colspan="1">Платежи:</td>
-										<td class="td-s">&nbsp;</td>
-										<td class="td-s">&nbsp;</td>
-										<td class="tdpr">&nbsp;</td>
-										<td class="td-s tdf">&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="th2" colspan="1">текущим днем</td>
-										<td>47<span class="b-rub">Р</span></td>
-										<td>
-											<div class="bx">37<span class="b-rub">Р</span></div>
-										</td>
-										<td class="tdpr">25<span class="b-rub">Р</span></td>
-										<td class="tdf">25<span class="b-rub">Р</span></td>
-									</tr>
-									<tr>
-										<td class="th2" colspan="1">следующим рабочим днем:</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td class="tdpr">&nbsp;</td>
-										<td class="tdf">&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="th2 line-tdd" colspan="1">до 30 000
-											<div class="line-vertik">&nbsp;</div>
-										</td>
-										<td class="line-t"><span style="color: #ef5f44;">БЕСПЛАТНО</span>
-											<div class="line-vertik">&nbsp;</div>
-										</td>
-										<td class="line-t"><span style="color: #ef5f44;">БЕСПЛАТНО</span>
-											<div class="line-vertik">&nbsp;</div>
-										</td>
-										<td id="tdprf" class="line-t tdpr">БЕСПЛАТНО
-											<div class="line-vertik-wh">&nbsp;</div>
-										</td>
-										<td class="line-td tdf"><span style="color: #ef5f44;">БЕСПЛАТНО</span>
-											<div class="line-vertik">&nbsp;</div>
-										</td>
-									</tr>
-									<tr class="trb">
-										<td class="th2" colspan="1">от 30 000</td>
-										<td>
-											<div class="fx">15<span class="b-rub">Р</span></div>
-										</td>
-										<td>
-											<div class="fx">15<span class="b-rub">Р</span></div>
-										</td>
-										<td class="tdpr">
-											<div class="fx">15<span class="b-rub">Р</span></div>
-										</td>
-										<td class="tdf">
-											<div class="fx">15<span class="b-rub">Р</span></div>
-										</td>
-									</tr>
-									<tr>
-										<td class="h_tarif2" rowspan="1" colspan="6">Переводы на счета физических лиц, электронные кошельки и выдача
-											наличных (в месяц)</td>
-									</tr>
-									<tr>
-										<td class="th2" colspan="1">Бесплатно</td>
-										<td>До 100 000<span class="b-rub">Р</span></td>
-										<td>До 200 000<span class="b-rub">Р</span></td>
-										<td class="tdpr">До 300 000<span class="b-rub">Р</span></td>
-										<td class="tdf">До 300 000<span class="b-rub">Р</span></td>
-										<td>До 300 000<span class="b-rub">Р</span></td>
-									</tr>
-									<tr>
-										<td class="th2" colspan="1">Каждые последующие сверх бесплатного лимита</td>
-										<td>+ 0,5 % за каждые последующие <br />100 000<span class="b-rub">Р</span>,<br />
-											<div class="tx">(не менее 200<span class="b-rub">Р</span>,<br />не более&nbsp;10&nbsp;000<span class="b-rub">Р</span>)</div>
-										</td>
-										<td>+ 0,5 % за каждые последующие <br />200 000<span class="b-rub">Р</span>,<br />
-											<div class="tx">(не менее 200<span class="b-rub">Р</span>,<br /> не более 10&nbsp;000<span class="b-rub">Р</span>)</div>
-										</td>
-										<td class="tdpr">+ 0,5 % за каждые последующие<br />300 000<span class="b-rub">Р</span>,<br />
-											<div class="tx">(не менее 200<span class="b-rub">Р</span>,<br /> не более 10&nbsp;000<span class="b-rub">Р</span>)</div>
-										</td>
-										<td class="tdf">+ 0,5 % за каждые последующие<br />300 000<span class="b-rub">Р</span>,<br />
-											<div class="tx">(не менее 200<span class="b-rub">Р</span>,<br /> не более 10&nbsp;000<span class="b-rub">Р</span>)</div>
-										</td>
-										<td>+ 0,5 % за каждые последующие <br />300&nbsp;000<span class="b-rub">Р</span>,<br />
-											<div class="tx">(не менее 200<span class="b-rub">Р</span>,<br /> не более 10&nbsp;000<span class="b-rub">Р</span>)</div>
-										</td>
-									</tr>
-									<tr class="parent">
-										<td class="h_tarif2" rowspan="1" colspan="6">Зачисление наличных</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">В кассе банка до 100 000 в месяц</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdpr">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdf">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">В банкоматах банка</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdpr">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdf">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">Выпуск корпоративных карт "Прайм Бизнес"</td>
-										<td>
-											<div class="fx">1 БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">3 БЕСПЛАТНО</div>
-										</td>
-										<td class="tdpr">
-											<div class="fx">5 БЕСПЛАТНО</div>
-										</td>
-										<td class="tdf">
-											<div class="fx">10 БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">ВСЕ БЕСПЛАТНО</div>
-										</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">Ежемесячное обслуживание карт</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdpr">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdf">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-									</tr>
-									<tr class="parent">
-										<td class="h_tarif2" rowspan="1" colspan="6">Перечисление заработной платы (за платеж) в рамках зарплатного
-											проекта Банка</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">В кассе банка до&nbsp;100&nbsp;000&nbsp;в&nbsp;месяц</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdpr">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdf">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-									</tr>
-									<tr class="box">
-										<td class="th2 line-tr" colspan="1">
-											<p>В банкоматах банка</p>
-											<p>с 9:00 до 11:59</p>
-										</td>
-										<td class="line-tr">
-											<div class="bx">&nbsp;</div>
-											10
-										</td>
-										<td class="line-tr">
-											<div class="bx">&nbsp;</div>
-											10
-										</td>
-										<td class="line-tr tdpr">
-											<div class="bx">&nbsp;</div>
-											10
-										</td>
-										<td class="line-tr tdf">
-											<div class="bx">&nbsp;</div>
-											10
-										</td>
-										<td class="line-tr">10<span class="fa fa-rub">&nbsp;</span>
-											<div class="tx">при ежемесячном остатке на расчетном счете от&nbsp;10&nbsp;000&nbsp;000<span class="b-rub">Р</span></div>
-										</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">с 12:00 до 20:00</td>
-										<td>22</td>
-										<td>22</td>
-										<td class="tdpr">22</td>
-										<td class="tdf">22</td>
-										<td>22<span class="fa fa-rub">&nbsp;</span><br />
-											<div class="tx">при ежемесячном остатке на расчетном счете от&nbsp;10&nbsp;000&nbsp;000<span class="b-rub">Р</span></div>
-										</td>
-									</tr>
-									<tr class="parent">
-										<td class="h_tarif2" rowspan="1" colspan="6">Интернет-банк</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">Интернет-банк</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdpr">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td class="tdf">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">
-											<p>Количество бесплатных ОТП-токенов</p>
-										</td>
-										<td>1</td>
-										<td>3</td>
-										<td class="tdpr">3</td>
-										<td class="tdf">
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-										<td>
-											<div class="fx">БЕСПЛАТНО</div>
-										</td>
-									</tr>
-									<tr class="parent">
-										<td class="h_tarif2" rowspan="1" colspan="6">Карты PRIORITY PASS для доступы в VIP-залы аэропортов</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">При среднемесячном остатке за 3 календарных месяца<br />
-											<div class="tx">*При несоблюдении остатков по карте, оплачивается базовая стоимость услуги</div>
-										</td>
-										<td>
-											<div class="bx">Количество бесплатных посещений VIP-залов</div>
-										</td>
-										<td>
-											<div class="bx">Количество бесплатных посещений VIP-залов</div>
-										</td>
-										<td class="tdpr">
-											<div class="bx">Количество бесплатных посещений VIP-залов</div>
-										</td>
-										<td class="tdf">
-											<div class="bx">Количество бесплатных посещений VIP-залов</div>
-										</td>
-										<td>
-											<div class="bx">Количество бесплатных посещений VIP-залов</div>
-										</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">От 5 000 000,00<br />до 8 000 000 <span class="b-rub">Р</span></td>
-										<td class="line-t"><br />-</td>
-										<td class="line-t"><br />-</td>
-										<td id="tdprf" class="line-t tdpr">Карта Priority Pass Standart+ на 10 бесплатных посещений VIP залов
-											ожиданий
-											для держателя карты и его гостей.</td>
-										<td class="line-t tdf">Priority Pass Standart+ на 10 бесплатных посещений держателю карты и гостям</td>
-										<td class="line-td">Priority Pass Standart+ на 10 бесплатных посещений держателю карты и гостям</td>
-									</tr>
-									<tr class="box">
-										<td class="th2 line-tdd" colspan="1">От 8 000 000,00<br />до 15 000 000 <span class="b-rub">Р</span></td>
-										<td class="line-t">-</td>
-										<td class="line-t">-</td>
-										<td id="tdprf" class="line-t tdpr">-</td>
-										<td class="line-t tdf">Priority Pass Prestige на неограниченное бесплатное посещение держателю карты и 10
-											бесплатных посещений его гостям</td>
-										<td class="line-td">Priority Pass Prestige на неограниченное бесплатное посещение держателю карты и 10
-											бесплатных посещений его гостям</td>
-									</tr>
-									<tr class="box">
-										<td class="th2" colspan="1">От 15 000 000 <span class="b-rub">Р</span></td>
-										<td>-</td>
-										<td>-</td>
-										<td class="tdpr">-</td>
-										<td class="tdf">-</td>
-										<td>Priority Pass Prestige на неограниченное бесплатное посещение держателю карты и его гостям</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+							
+						<table class="table_tarif2" id="my_table" style="width:1100px; border: 1px solid #909090; margin: auto;" rules="all">
+							<thead>
+								<tr id="kepka">
+									<th colspan="1" >&nbsp;</th>
+									<th >Легкий старт</th>
+									<th >Мастер</th>
+									<th  class="tdpr">Профессионал
+										<div class="btn prof_btn" data-popup-opener="form_construct_121">
+											<input type="button" />
+											<span class="btn_text">ПОДКЛЮЧИТЬ</span>
+										</div>
+									</th>
+									<th >Эксперт</th>
+									<th >Лидер</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="h_tarif2" rowspan="1" colspan="6">Открытие и введение счета</td>
+								</tr>
+								<tr>
+									<td class="th2">Открытие счета, подготовка документов, резервирование номера</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdpr">
+										<div class="fx">БЕСПЛАТНО</div>
+										<div class="ieShadow">&nbsp;</div>
+									</td>
+									<td class="tdf">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="th2">Ведение счета
+										<br />(в месяц)</td>
+									<td>
+										<div class="fx">ВСЕГДА
+											<br />БЕСПЛАТНО</div>
+									</td>
+									<td>первые 2 месяца
+										<br />БЕСПЛАТНО,
+										<br />
+										<div class="tx">900
+											<span class="b-rub">Р</span> с 3 месяца</div>
+									</td>
+									<td class="tdpr">2 900
+										<span class="fa fa-rub">&nbsp;</span>
+									</td>
+									<td class="tdf">3 900
+										<span class="fa fa-rub">&nbsp;</span>
+									</td>
+									<td>5 900
+										<span class="fa fa-rub">&nbsp;</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="th2">Бесплатно
+										<br />при среднемесячном остатке за прошлый месяц на расчетном счете</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>-</td>
+									<td class="tdpr">Свыше
+										<br /> 3 000 000
+										<span class="b-rub">Р</span>
+									</td>
+									<td class="tdf">Свыше
+										<br /> 5 000 000
+										<span class="b-rub">Р</span>
+									</td>
+									<td>Свыше
+										<br /> 10 000 000
+										<span class="b-rub">Р</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="th2" colspan="1">Онлайн зачисления и списания</td>
+									<td>-</td>
+									<td>-</td>
+									<td class="tdpr">+ 3 000
+										<span class="b-rub">Р</span> в месяц</td>
+									<td class="tdf">+ 3 000
+										<span class="b-rub">Р</span> в месяц</td>
+									<td>+ 3 000
+										<span class="b-rub">Р</span> в месяц</td>
+								</tr>
+								<tr>
+									<td class="th2" rowspan="2" colspan="1">Проценты на остаток</td>
+									<td class="line-tr" colspan="2">Минимальный остаток от&nbsp;300&nbsp;000
+										<span class="b-rub">Р</span>
+										<div class="line-vertik">&nbsp;</div>
+									</td>
+									<td class="tdpr" rowspan="2" colspan="1">-</td>
+									<td class="tdf" rowspan="2" colspan="1">-</td>
+									<td class="ltd" rowspan="2" colspan="1">-</td>
+								</tr>
+								<tr class="trb">
+									<td class="ltd" rowspan="1" colspan="1">6% годовых
+										<br />
+										<div class="tx">( до 3 000
+											<span class="b-rub">Р</span> в месяц)</div>
+									</td>
+									<td colspan="1">7% годовых
+										<br />
+										<div class="tx">( до 5 000
+											<span class="b-rub">Р</span>&nbsp;в месяц)</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="h_tarif2" rowspan="1" colspan="6">Переводы на счет юридических лиц и индивидуальных предпринимателей (с 9.00 до 20.00)</td>
+								</tr>
+								<tr>
+									<td class="th2" colspan="1">Бесплатные переводы в месяц</td>
+									<td>5</td>
+									<td>
+										<div class="bx">10</div>
+									</td>
+									<td class="tdprf">15</td>
+									<td class="tdf">20</td>
+									<td class="td-s" rowspan="6" colspan="1">ВСЕ
+										<br />БЕСПЛАТНО</td>
+								</tr>
+								<tr>
+									<td class="th2" colspan="1">Платежи:</td>
+									<td class="td-s">&nbsp;</td>
+									<td class="td-s">&nbsp;</td>
+									<td class="tdpr">&nbsp;</td>
+									<td class="td-s tdf">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="th2" colspan="1">текущим днем</td>
+									<td>47
+										<span class="b-rub">Р</span>
+									</td>
+									<td>
+										<div class="bx">37
+											<span class="b-rub">Р</span>
+										</div>
+									</td>
+									<td class="tdpr">25
+										<span class="b-rub">Р</span>
+									</td>
+									<td class="tdf">25
+										<span class="b-rub">Р</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="th2" colspan="1">следующим рабочим днем:</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td class="tdpr">&nbsp;</td>
+									<td class="tdf">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="th2 line-tdd" colspan="1">до 30 000
+										<div class="line-vertik">&nbsp;</div>
+									</td>
+									<td class="line-t">
+										<span style="color: #ef5f44;">БЕСПЛАТНО</span>
+										<div class="line-vertik">&nbsp;</div>
+									</td>
+									<td class="line-t">
+										<span style="color: #ef5f44;">БЕСПЛАТНО</span>
+										<div class="line-vertik">&nbsp;</div>
+									</td>
+									<td id="tdprf" class="line-t tdpr">БЕСПЛАТНО
+										<div class="line-vertik-wh">&nbsp;</div>
+									</td>
+									<td class="line-td tdf">
+										<span style="color: #ef5f44;">БЕСПЛАТНО</span>
+										<div class="line-vertik">&nbsp;</div>
+									</td>
+								</tr>
+								<tr class="trb">
+									<td class="th2" colspan="1">от 30 000</td>
+									<td>
+										<div class="fx">15
+											<span class="b-rub">Р</span>
+										</div>
+									</td>
+									<td>
+										<div class="fx">15
+											<span class="b-rub">Р</span>
+										</div>
+									</td>
+									<td class="tdpr">
+										<div class="fx">15
+											<span class="b-rub">Р</span>
+										</div>
+									</td>
+									<td class="tdf">
+										<div class="fx">15
+											<span class="b-rub">Р</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="h_tarif2" rowspan="1" colspan="6">Переводы на счета физических лиц, электронные кошельки и выдача наличных (в месяц)</td>
+								</tr>
+								<tr>
+									<td class="th2" colspan="1">Бесплатно</td>
+									<td>До 100 000
+										<span class="b-rub">Р</span>
+									</td>
+									<td>До 200 000
+										<span class="b-rub">Р</span>
+									</td>
+									<td class="tdpr">До 300 000
+										<span class="b-rub">Р</span>
+									</td>
+									<td class="tdf">До 300 000
+										<span class="b-rub">Р</span>
+									</td>
+									<td>До 300 000
+										<span class="b-rub">Р</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="th2" colspan="1">Каждые последующие сверх бесплатного лимита</td>
+									<td>+ 0,5 % за каждые последующие
+										<br />100 000
+										<span class="b-rub">Р</span>,
+										<br />
+										<div class="tx">(не менее 200
+											<span class="b-rub">Р</span>,
+											<br />не более&nbsp;10&nbsp;000
+											<span class="b-rub">Р</span>)</div>
+									</td>
+									<td>+ 0,5 % за каждые последующие
+										<br />200 000
+										<span class="b-rub">Р</span>,
+										<br />
+										<div class="tx">(не менее 200
+											<span class="b-rub">Р</span>,
+											<br /> не более 10&nbsp;000
+											<span class="b-rub">Р</span>)</div>
+									</td>
+									<td class="tdpr">+ 0,5 % за каждые последующие
+										<br />300 000
+										<span class="b-rub">Р</span>,
+										<br />
+										<div class="tx">(не менее 200
+											<span class="b-rub">Р</span>,
+											<br /> не более 10&nbsp;000
+											<span class="b-rub">Р</span>)</div>
+									</td>
+									<td class="tdf">+ 0,5 % за каждые последующие
+										<br />300 000
+										<span class="b-rub">Р</span>,
+										<br />
+										<div class="tx">(не менее 200
+											<span class="b-rub">Р</span>,
+											<br /> не более 10&nbsp;000
+											<span class="b-rub">Р</span>)</div>
+									</td>
+									<td>+ 0,5 % за каждые последующие
+										<br />300&nbsp;000
+										<span class="b-rub">Р</span>,
+										<br />
+										<div class="tx">(не менее 200
+											<span class="b-rub">Р</span>,
+											<br /> не более 10&nbsp;000
+											<span class="b-rub">Р</span>)</div>
+									</td>
+								</tr>
+								<tr class="parent">
+									<td class="h_tarif2" rowspan="1" colspan="6">Зачисление наличных</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">В кассе банка до 100 000 в месяц</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdpr">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdf">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">В банкоматах банка</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdpr">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdf">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">Выпуск корпоративных карт "Прайм Бизнес"</td>
+									<td>
+										<div class="fx">1 БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">3 БЕСПЛАТНО</div>
+									</td>
+									<td class="tdpr">
+										<div class="fx">5 БЕСПЛАТНО</div>
+									</td>
+									<td class="tdf">
+										<div class="fx">10 БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">ВСЕ БЕСПЛАТНО</div>
+									</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">Ежемесячное обслуживание карт</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdpr">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdf">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+								</tr>
+								<tr class="parent">
+									<td class="h_tarif2" rowspan="1" colspan="6">Перечисление заработной платы (за платеж) в рамках зарплатного проекта Банка</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">В кассе банка до&nbsp;100&nbsp;000&nbsp;в&nbsp;месяц</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdpr">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdf">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+								</tr>
+								<tr class="box">
+									<td class="th2 line-tr" colspan="1">
+										<p>В банкоматах банка</p>
+										<p>с 9:00 до 11:59</p>
+									</td>
+									<td class="line-tr">
+										<div class="bx">&nbsp;</div>
+										10</td>
+									<td class="line-tr">
+										<div class="bx">&nbsp;</div>
+										10</td>
+									<td class="line-tr tdpr">
+										<div class="bx">&nbsp;</div>
+										10</td>
+									<td class="line-tr tdf">
+										<div class="bx">&nbsp;</div>
+										10</td>
+									<td class="line-tr">10
+										<span class="fa fa-rub">&nbsp;</span>
+										<div class="tx">при ежемесячном остатке на расчетном счете от&nbsp;10&nbsp;000&nbsp;000
+											<span class="b-rub">Р</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">с 12:00 до 20:00</td>
+									<td>22</td>
+									<td>22</td>
+									<td class="tdpr">22</td>
+									<td class="tdf">22</td>
+									<td>22
+										<span class="fa fa-rub">&nbsp;</span>
+										<br />
+										<div class="tx">при ежемесячном остатке на расчетном счете от&nbsp;10&nbsp;000&nbsp;000
+											<span class="b-rub">Р</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="parent">
+									<td class="h_tarif2" rowspan="1" colspan="6">Интернет-банк</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">Интернет-банк</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdpr">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td class="tdf">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">
+										<p>Количество бесплатных ОТП-токенов</p>
+									</td>
+									<td>1</td>
+									<td>3</td>
+									<td class="tdpr">3</td>
+									<td class="tdf">
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+									<td>
+										<div class="fx">БЕСПЛАТНО</div>
+									</td>
+								</tr>
+								<tr class="parent">
+									<td class="h_tarif2" rowspan="1" colspan="6">Карты PRIORITY PASS для доступы в VIP-залы аэропортов</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">При среднемесячном остатке за 3 календарных месяца
+										<br />
+										<div class="tx">*При несоблюдении остатков по карте, оплачивается базовая стоимость услуги</div>
+									</td>
+									<td>
+										<div class="bx">Количество бесплатных посещений VIP-залов</div>
+									</td>
+									<td>
+										<div class="bx">Количество бесплатных посещений VIP-залов</div>
+									</td>
+									<td class="tdpr">
+										<div class="bx">Количество бесплатных посещений VIP-залов</div>
+									</td>
+									<td class="tdf">
+										<div class="bx">Количество бесплатных посещений VIP-залов</div>
+									</td>
+									<td>
+										<div class="bx">Количество бесплатных посещений VIP-залов</div>
+									</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">От 5 000 000,00
+										<br />до 8 000 000
+										<span class="b-rub">Р</span>
+									</td>
+									<td class="line-t">
+										<br />-</td>
+									<td class="line-t">
+										<br />-</td>
+									<td id="tdprf" class="line-t tdpr">Карта Priority Pass Standart+ на 10 бесплатных посещений VIP залов ожиданий для держателя карты и его гостей.</td>
+									<td class="line-t tdf">Priority Pass Standart+ на 10 бесплатных посещений держателю карты и гостям</td>
+									<td class="line-td">Priority Pass Standart+ на 10 бесплатных посещений держателю карты и гостям</td>
+								</tr>
+								<tr class="box">
+									<td class="th2 line-tdd" colspan="1">От 8 000 000,00
+										<br />до 15 000 000
+										<span class="b-rub">Р</span>
+									</td>
+									<td class="line-t">-</td>
+									<td class="line-t">-</td>
+									<td id="tdprf" class="line-t tdpr">-</td>
+									<td class="line-t tdf">Priority Pass Prestige на неограниченное бесплатное посещение держателю карты и 10 бесплатных посещений его гостям</td>
+									<td class="line-td">Priority Pass Prestige на неограниченное бесплатное посещение держателю карты и 10 бесплатных посещений его гостям</td>
+								</tr>
+								<tr class="box">
+									<td class="th2" colspan="1">От 15 000 000
+										<span class="b-rub">Р</span>
+									</td>
+									<td>-</td>
+									<td>-</td>
+									<td class="tdpr">-</td>
+									<td class="tdf">-</td>
+									<td>Priority Pass Prestige на неограниченное бесплатное посещение держателю карты и его гостям</td>
+								</tr>
+							</tbody>
+						</table>
+
 					</div>
 				</div>
 
 
+				<div class="container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet placerat pharetra. Vestibulum id suscipit
+						eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi commodo mattis dui nec adipiscing. Maecenas
+						lobortis et quam eu dictum. Nunc sit amet mauris ac augue blandit consequat id tincidunt odio. Suspendisse gravida
+						purus in nibh faucibus condimentum. Aenean iaculis porta porta. Proin scelerisque tempus leo.</p>
+					<p>In vitae turpis et massa suscipit placerat. Nullam cursus fermentum quam, ac cursus sapien facilisis a. Quisque sed
+						varius neque. Nam nisi enim, molestie quis pellentesque pharetra, pharetra ac dui. Etiam non faucibus nunc, at gravida
+						metus. Sed felis dolor, auctor sit amet velit sit amet, condimentum laoreet ante. Sed ornare erat et mi ullamcorper,
+						ut tempor mauris suscipit. Mauris sagittis dolor eu ullamcorper porttitor. Nulla convallis vestibulum libero et tempus.
+						Donec et dui lectus. Mauris vel laoreet massa. Integer suscipit consequat dolor, quis suscipit mauris euismod ornare.
+						Sed ut luctus mi, at dapibus justo. Suspendisse consectetur a quam sed iaculis. Sed viverra commodo hendrerit.</p>
+					<p>Nullam vulputate urna dui, in aliquet risus hendrerit vel. Phasellus eu turpis dolor. Duis vehicula justo ac nulla rutrum,
+						eu iaculis purus ultricies. In hac habitasse platea dictumst. Vivamus sed scelerisque orci, id fermentum urna. Pellentesque
+						in elit eros. Morbi consequat ligula non euismod tincidunt.</p>
+					<p>Aenean non cursus odio. Vivamus interdum risus in lacus auctor, et dignissim urna mattis. Praesent tellus est, semper
+						vitae consequat ut, malesuada non magna. In ac congue purus, vel dignissim lectus. Ut in mauris cursus, eleifend dui
+						sit amet, cursus nibh. Ut nibh velit, consequat et mollis et, tincidunt ac lorem. Praesent elementum lobortis dapibus.
+						Aliquam tortor turpis, egestas ac dolor eget, iaculis auctor risus. Suspendisse potenti. Fusce semper feugiat laoreet.
+						Donec orci nunc, consectetur quis tempus sit amet, mattis aliquam nulla. Aliquam at est a lacus blandit pretium quis
+						et quam. Vivamus dignissim nunc eget ante commodo, eget vestibulum elit viverra.</p>
+					<p>Nullam a nunc vitae purus porttitor accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+						inceptos himenaeos. Curabitur ut facilisis nunc. Nullam quis leo aliquet, convallis urna eget, commodo sapien. Quisque
+						sed odio libero. Fusce sem leo, blandit vitae lectus id, scelerisque posuere metus. Nam nulla nibh, ullamcorper sit
+						amet posuere eget, fringilla eu velit. Duis id dapibus libero. Duis a erat tellus. Sed erat purus, ultricies eget ultrices
+						malesuada, tempor nec massa. Aenean sed felis odio.</p>
+					<p>Vestibulum lorem dolor, eleifend non elit ut, consectetur dignissim dui. Nullam faucibus volutpat mi eu facilisis. Donec
+						eu massa nulla. In hac habitasse platea dictumst. Phasellus at neque eget metus scelerisque blandit. Duis pretium ante
+						leo, dignissim consequat massa ullamcorper a. Pellentesque pretium lacinia sapien quis consequat. Nam semper, turpis
+						quis fermentum condimentum, eros enim aliquam enim, quis hendrerit est lorem tristique elit. Morbi at facilisis mauris.
+						Etiam eros augue, fringilla eget leo ac, condimentum viverra elit. Suspendisse ut ante a orci iaculis bibendum. Vivamus
+						vehicula in enim id tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+					<p>Donec sed erat vel orci bibendum tristique. Ut sollicitudin, tellus id rhoncus dapibus, lectus nisl iaculis orci, malesuada
+						ornare odio libero sit amet risus. Nulla in odio rhoncus, tristique nisi tristique, porta massa. Nullam sed rhoncus
+						nisi, a cursus urna. Fusce sit amet lacus eu justo pretium condimentum. In tempus ultricies urna nec pharetra. Sed
+						molestie facilisis arcu, sit amet egestas tortor cursus eget. Sed et hendrerit justo. Quisque in turpis lacinia, aliquet
+						massa non, mattis lorem. Integer imperdiet ante non ligula pretium sollicitudin. Morbi rhoncus imperdiet bibendum.</p>
+					<p>Ut vitae odio tincidunt, laoreet magna placerat, lacinia lorem. Cras viverra bibendum magna id consequat. Fusce sed
+						gravida ligula. Quisque sodales dignissim volutpat. Nunc ut nisl elit. Praesent quis consequat metus. Donec vel varius
+						nunc. Ut egestas odio ullamcorper, dictum erat non, lobortis massa. Nunc ultrices sapien nec egestas placerat. Integer
+						eget magna eros. Suspendisse nec magna sed ligula varius tristique.</p>
+					<p>Maecenas neque magna, laoreet viverra nibh eget, pharetra semper nisl. Donec mollis leo non sem euismod ultricies. Duis
+						tempus, sem et pellentesque feugiat, nulla metus tincidunt dolor, in porta dolor purus sit amet nulla. Nullam imperdiet
+						elementum ultrices. Curabitur fermentum velit sit amet turpis bibendum ullamcorper sed quis quam. Donec volutpat, nisl
+						non egestas pellentesque, nibh ante posuere nibh, id scelerisque erat lacus eget justo. Nam eu suscipit sapien. Integer
+						placerat odio sed justo aliquet, vel semper velit eleifend.</p>
+					<p>Donec sit amet massa ac lectus sagittis rutrum. Donec tincidunt mi arcu, vitae molestie magna adipiscing vitae. Curabitur
+						varius mollis arcu eu posuere. Nam condimentum, massa sed rutrum convallis, massa eros suscipit mi, eu aliquam purus
+						sem nec justo. Sed dolor quam, pretium et tempor non, porttitor in arcu. Donec eleifend placerat quam eu bibendum.
+						Mauris elementum laoreet elit, et molestie enim tincidunt ut. Mauris a consectetur elit. Morbi tincidunt sem in ligula
+						condimentum, sit amet accumsan ligula luctus. Praesent sollicitudin nunc non diam rutrum tincidunt. Nulla risus sapien,
+						condimentum eu dictum nec, pharetra convallis magna. Etiam ac quam quis urna semper mollis ac vel mauris. Mauris cursus,
+						turpis sit amet eleifend consectetur, metus mauris tristique urna, eu porta urna metus quis quam. Mauris quis fermentum
+						tortor, nec euismod urna. Pellentesque orci quam, viverra ac mollis id, vulputate aliquet lorem. Aenean eu commodo
+						dui.</p>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet placerat pharetra. Vestibulum id
-					suscipit eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi commodo mattis dui nec
-					adipiscing. Maecenas lobortis et quam eu dictum. Nunc sit amet mauris ac augue blandit consequat id tincidunt
-					odio. Suspendisse gravida purus in nibh faucibus condimentum. Aenean iaculis porta porta. Proin scelerisque tempus
-					leo.</p>
-				<p>In vitae turpis et massa suscipit placerat. Nullam cursus fermentum quam, ac cursus sapien facilisis a. Quisque
-					sed varius neque. Nam nisi enim, molestie quis pellentesque pharetra, pharetra ac dui. Etiam non faucibus nunc, at
-					gravida metus. Sed felis dolor, auctor sit amet velit sit amet, condimentum laoreet ante. Sed ornare erat et mi
-					ullamcorper, ut tempor mauris suscipit. Mauris sagittis dolor eu ullamcorper porttitor. Nulla convallis vestibulum
-					libero et tempus. Donec et dui lectus. Mauris vel laoreet massa. Integer suscipit consequat dolor, quis suscipit
-					mauris euismod ornare. Sed ut luctus mi, at dapibus justo. Suspendisse consectetur a quam sed iaculis. Sed viverra
-					commodo hendrerit.</p>
-				<p>Nullam vulputate urna dui, in aliquet risus hendrerit vel. Phasellus eu turpis dolor. Duis vehicula justo ac
-					nulla rutrum, eu iaculis purus ultricies. In hac habitasse platea dictumst. Vivamus sed scelerisque orci, id
-					fermentum urna. Pellentesque in elit eros. Morbi consequat ligula non euismod tincidunt.</p>
-				<p>Aenean non cursus odio. Vivamus interdum risus in lacus auctor, et dignissim urna mattis. Praesent tellus est,
-					semper vitae consequat ut, malesuada non magna. In ac congue purus, vel dignissim lectus. Ut in mauris cursus,
-					eleifend dui sit amet, cursus nibh. Ut nibh velit, consequat et mollis et, tincidunt ac lorem. Praesent elementum
-					lobortis dapibus. Aliquam tortor turpis, egestas ac dolor eget, iaculis auctor risus. Suspendisse potenti. Fusce
-					semper feugiat laoreet. Donec orci nunc, consectetur quis tempus sit amet, mattis aliquam nulla. Aliquam at est a
-					lacus blandit pretium quis et quam. Vivamus dignissim nunc eget ante commodo, eget vestibulum elit viverra.</p>
-				<p>Nullam a nunc vitae purus porttitor accumsan. Class aptent taciti sociosqu ad litora torquent per conubia
-					nostra, per inceptos himenaeos. Curabitur ut facilisis nunc. Nullam quis leo aliquet, convallis urna eget, commodo
-					sapien. Quisque sed odio libero. Fusce sem leo, blandit vitae lectus id, scelerisque posuere metus. Nam nulla
-					nibh, ullamcorper sit amet posuere eget, fringilla eu velit. Duis id dapibus libero. Duis a erat tellus. Sed erat
-					purus, ultricies eget ultrices malesuada, tempor nec massa. Aenean sed felis odio.</p>
-				<p>Vestibulum lorem dolor, eleifend non elit ut, consectetur dignissim dui. Nullam faucibus volutpat mi eu
-					facilisis. Donec eu massa nulla. In hac habitasse platea dictumst. Phasellus at neque eget metus scelerisque
-					blandit. Duis pretium ante leo, dignissim consequat massa ullamcorper a. Pellentesque pretium lacinia sapien quis
-					consequat. Nam semper, turpis quis fermentum condimentum, eros enim aliquam enim, quis hendrerit est lorem
-					tristique elit. Morbi at facilisis mauris. Etiam eros augue, fringilla eget leo ac, condimentum viverra elit.
-					Suspendisse ut ante a orci iaculis bibendum. Vivamus vehicula in enim id tempus. Vestibulum ante ipsum primis in
-					faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-				<p>Donec sed erat vel orci bibendum tristique. Ut sollicitudin, tellus id rhoncus dapibus, lectus nisl iaculis
-					orci, malesuada ornare odio libero sit amet risus. Nulla in odio rhoncus, tristique nisi tristique, porta massa.
-					Nullam sed rhoncus nisi, a cursus urna. Fusce sit amet lacus eu justo pretium condimentum. In tempus ultricies
-					urna nec pharetra. Sed molestie facilisis arcu, sit amet egestas tortor cursus eget. Sed et hendrerit justo.
-					Quisque in turpis lacinia, aliquet massa non, mattis lorem. Integer imperdiet ante non ligula pretium
-					sollicitudin. Morbi rhoncus imperdiet bibendum.</p>
-				<p>Ut vitae odio tincidunt, laoreet magna placerat, lacinia lorem. Cras viverra bibendum magna id consequat. Fusce
-					sed gravida ligula. Quisque sodales dignissim volutpat. Nunc ut nisl elit. Praesent quis consequat metus. Donec
-					vel varius nunc. Ut egestas odio ullamcorper, dictum erat non, lobortis massa. Nunc ultrices sapien nec egestas
-					placerat. Integer eget magna eros. Suspendisse nec magna sed ligula varius tristique.</p>
-				<p>Maecenas neque magna, laoreet viverra nibh eget, pharetra semper nisl. Donec mollis leo non sem euismod
-					ultricies. Duis tempus, sem et pellentesque feugiat, nulla metus tincidunt dolor, in porta dolor purus sit amet
-					nulla. Nullam imperdiet elementum ultrices. Curabitur fermentum velit sit amet turpis bibendum ullamcorper sed
-					quis quam. Donec volutpat, nisl non egestas pellentesque, nibh ante posuere nibh, id scelerisque erat lacus eget
-					justo. Nam eu suscipit sapien. Integer placerat odio sed justo aliquet, vel semper velit eleifend.</p>
-				<p>Donec sit amet massa ac lectus sagittis rutrum. Donec tincidunt mi arcu, vitae molestie magna adipiscing vitae.
-					Curabitur varius mollis arcu eu posuere. Nam condimentum, massa sed rutrum convallis, massa eros suscipit mi, eu
-					aliquam purus sem nec justo. Sed dolor quam, pretium et tempor non, porttitor in arcu. Donec eleifend placerat
-					quam eu bibendum. Mauris elementum laoreet elit, et molestie enim tincidunt ut. Mauris a consectetur elit. Morbi
-					tincidunt sem in ligula condimentum, sit amet accumsan ligula luctus. Praesent sollicitudin nunc non diam rutrum
-					tincidunt. Nulla risus sapien, condimentum eu dictum nec, pharetra convallis magna. Etiam ac quam quis urna semper
-					mollis ac vel mauris. Mauris cursus, turpis sit amet eleifend consectetur, metus mauris tristique urna, eu porta
-					urna metus quis quam. Mauris quis fermentum tortor, nec euismod urna. Pellentesque orci quam, viverra ac mollis
-					id, vulputate aliquet lorem. Aenean eu commodo dui.</p>
-
-
+				</div>
 			</div>
 		</div>
 
@@ -555,7 +671,8 @@
 							<!-- обратная связь -->
 							<div class="btn btn-green btn-green-contact" data-popup-opener="feedback">
 								<input class="" type="button">
-								<span class="btn_text"><i class="material-icons"></i> Обратная связь</span>
+								<span class="btn_text">
+									<i class="material-icons"></i> Обратная связь</span>
 							</div>
 						</div>
 						<div class="col _8 _md pull-right">
@@ -613,8 +730,7 @@
 			}
 		}
 	</script>
-	</div>
-	</div>
+
 
 	<script src="//www.youtube.com/iframe_api"></script>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
@@ -637,7 +753,8 @@
 			slidesToScroll: 1,
 			autoplay: false,
 			autoplaySpeed: 2000,
-			responsive: [{
+			responsive: [
+				{
 					breakpoint: 1200,
 					settings: {
 						slidesToShow: 3,
@@ -676,7 +793,8 @@
 			slidesToScroll: 1,
 			autoplay: false,
 			autoplaySpeed: 2000,
-			responsive: [{
+			responsive: [
+				{
 					breakpoint: 1200,
 					settings: {
 						slidesToShow: 3,
@@ -705,12 +823,131 @@
 		});
 	</script>
 	<!-- gallery option end -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script>
-		document.getElementById("wrap").addEventListener("scroll", function () {
-			var translate = "translate(0," + this.scrollTop + "px)";
-			this.querySelector("thead").style.transform = translate;
-		});
+		//-----------------------------------------------------
+		// Фиксированный заголовок у таблицы
+		//-----------------------------------------------------
+		// by ManHunter / PCL (www.manhunter.ru)
+		//-----------------------------------------------------
+		fix_header = {
+			'fixed_el': null,
+			'new_table': null,
+
+			bind: function (el, eventName, callback) {
+				if (el) {
+					if (el.addEventListener) {
+						el.addEventListener(eventName, callback, false);
+					}
+					else if (el.attachEvent) {
+						el.attachEvent("on" + eventName, callback);
+					}
+				}
+			},
+
+			get_position: function (el) {
+				var offsetLeft = 0, offsetTop = 0;
+				do {
+					offsetLeft += el.offsetLeft;
+					offsetTop += el.offsetTop;
+				}
+				while (el = el.offsetParent);
+				return { x: offsetLeft, y: offsetTop };
+			},
+
+			chk_position: function () {
+				var doc = document.documentElement;
+				var body = document.body;
+
+				if (typeof (window.innerWidth) == 'number') {
+					my_width = window.innerWidth;
+					my_height = window.innerHeight;
+				}
+				else if (doc && (doc.clientWidth || doc.clientHeight)) {
+					my_width = doc.clientWidth;
+					my_height = doc.clientHeight;
+				}
+				else if (body && (body.clientWidth || body.clientHeight)) {
+					my_width = body.clientWidth;
+					my_height = body.clientHeight;
+				}
+
+				if (doc.scrollTop) { dy = doc.scrollTop; } else { dy = body.scrollTop; }
+
+				var coord = fix_header.get_position(fix_header.fixed_el);
+
+				// Заголовок таблицы еще на экране или таблица уже не на экране
+				if (coord.y > dy || (coord.y + fix_header.fixed_el.clientHeight) < dy) {
+					fix_header.new_table.style.left = '-9999px';
+				}
+				// Заголовок уже прокручен вверх
+				else {
+					fix_header.new_table.style.left =
+						fix_header.fixed_el.getBoundingClientRect().left + 'px';
+				}
+			},
+
+			fix: function (id) {
+				var tmp, st;
+				var ftable = document.getElementById(id);
+				if (ftable) {
+					if (this.new_table != null) {
+						if (this.new_table.parentNode != undefined) {
+							this.new_table.parentNode.removeChild(this.new_table);
+						}
+						this.new_table = null;
+					}
+					else {
+						this.bind(window, 'scroll', this.chk_position);
+						this.bind(window, 'resize', this.chk_position);
+					}
+
+					this.fixed_el = ftable;
+
+					tmp = ftable.getElementsByTagName('thead');
+					if (tmp) {
+						var fthead = tmp[0];
+
+						new_table = document.createElement('table');
+
+						for (var i in this.fixed_el.style) {
+							if (this.fixed_el.style[i] != '') {
+								try {
+									new_table.style[i] = this.fixed_el.style[i];
+								}
+								catch (e) { };
+							}
+						}
+
+						new_table.id = 'fixed_' + id;
+						new_table.rules = 'all';
+						new_table.border = '1';
+						new_table.style.position = 'fixed';
+						new_table.style.left = '-9999px';
+						new_table.style.top = '0px';
+
+						var cln = fthead.cloneNode(true);
+						var cth = cln.getElementsByTagName('th');
+						var fth = fthead.getElementsByTagName('th');
+
+						for (var i = 0; i < fth.length; i++) {
+							cth[i].style.width = (fth[i].clientWidth + (window.opera ? 1 : 0)) + 'px';
+							cth[i].style.paddingLeft = '0';
+							cth[i].style.paddingRight = '0';
+						}
+						new_table.appendChild(cln);
+
+						this.fixed_el.parentNode.appendChild(new_table);
+						this.new_table = new_table;
+						this.chk_position();
+					}
+				}
+			}
+		};
+	</script>
+	<script type="text/javascript">
+		/*<![CDATA[*/
+		fix_header.fix('my_table');
+	/*]]>*/
 	</script>
 </body>
 
