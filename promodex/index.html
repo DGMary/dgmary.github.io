@@ -1,0 +1,864 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>promodex</title>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/bxslider/jquery.bxslider.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+<div class="wrapper">
+<nav id="top">
+	<div class="container-fluid">
+	<div class="container">
+		<div class="pull-left">
+		<div class="nav_top">
+			<ul class="list-inline">
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Помощь</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">О нас </a></li>               
+			</ul>			
+		</div>
+		</div>
+		<div id="top-links" class="nav pull-right">
+			<ul class="list-inline">
+				<li class="enter"><a href="#register">Вход</a></li>
+				<li><a href="#login">Регистрация</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+</nav>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<div id="logo"> 
+					<a href="https://demo.opencart.com/index.php?route=common/home"><img src="img/logo.png"></a>
+					<span>Товары </span><span>по минимальным ценам</span>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="dropdown">
+  					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">+38(056) 404 41 25<span class="caret_down"></span>
+  					</button>
+  					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    					<li><a href="#">+38(056) 404 41 25</a></li>
+    					<li><a href="#">+38(056) 404 41 25</a></li>
+  					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="call">
+					<button class="btn btn-default " type="button">Перезвоните мне<span class="сall"><img src="img/call.png"></span>
+  					</button>					
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+			<div class="cart">
+				<div class="wishlist">
+					<a href="#">
+						<span id="wish-total" class="total">8</span>
+						<img src="img/wishlist.png">
+						<span>Избранное</span>
+					</a>
+				</div>
+				<div class="comparison">
+					<a href="#">
+						<span id="comp-total" class="total">5</span>
+						<img src="img/comparison.png">
+						<span>Сравнение</span>
+					</a>
+				</div>
+				<div class="basket">
+					<a href="#">
+						<span id="cart-total" class="total">5</span>
+						<img src="img/basket.png">
+						<span>Корзина</span>
+					</a>
+				</div>
+			</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+<div id="section_search">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-3">
+			<nav id="menu" class="navbar">
+				<span id="category">Все товары</span>
+				<span class="burger"><img src="img/category/burgermenu.png"></span>
+			</nav>
+		</div>
+		<div class="col-md-9">
+			<div id="search" class="input-group">
+				<input type="text" name="search" value="" placeholder="Поиск" class="form-control input-lg" />
+				<span class="input-group-btn">
+				<button type="button" class="btn btn-default btn-lg"><span class="search"><img src="img/search.png"></span></button>
+				</span>
+			</div>
+		</div>			
+		</div>
+	</div>
+</div>
+<div id="slider">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a  class="cat1" href="#" class="dropdown-toggle" data-toggle="dropdown">Аккумуляторы </a>
+					<div class="dropdown-menu">
+						<div class="dropdown-inner"> 
+						<ul class="list-unstyled">
+							<li><a href="#">Для iPhone</a></li>
+							<li><a href="#">Для Samsung</a></li>
+						</ul>
+						</div>
+					</div>
+					</li>
+					<li class="dropdown"><a class="cat2" href="#" class="dropdown-toggle" data-toggle="dropdown">Блоки питания, зарядные устройства</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-inner"> 
+							<ul class="list-unstyled">
+								<li><a href="#">Для iPhone</a></li>
+								<li><a href="#">Для Samsung</a></li>
+							</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown"><a  class="cat3" href="#" data-toggle="dropdown">Кабельная продукция</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-inner"> 
+							<ul class="list-unstyled">
+ 								<li><a href="#">Для iPhone</a></li>
+								<li><a href="#">Для Samsung</a></li>
+							</ul>
+							</div>
+						</div>
+					</li>
+					<li><a href="#" class="cat4">Компьютерное оборудование</a></li>
+					<li><a class="cat5" href="#">Сетевое оборудовние</a></li>
+					<li><a class="cat6" href="#">Колонки, наушники, радио, микрофоны, диктофоны </a></li>
+					<li><a class="cat7" href="#">Оборудование для ремонта и производства</a></li>
+					<li class="dropdown"><a  class="cat8" href="#" class="dropdown-toggle" data-toggle="dropdown">Аккумуляторы </a>
+					<div class="dropdown-menu">
+						<div class="dropdown-inner"> 
+						<ul class="list-unstyled">
+							<li><a href="#">Для iPhone</a></li>
+							<li><a href="#">Для Samsung</a></li>
+						</ul>
+						</div>
+					</div>
+					</li>
+					<li class="dropdown"><a class="cat9" href="#" class="dropdown-toggle" data-toggle="dropdown">Блоки питания, зарядные устройства</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-inner"> 
+							<ul class="list-unstyled">
+								<li><a href="#">Для iPhone</a></li>
+								<li><a href="#">Для Samsung</a></li>
+							</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown"><a class="cat10" href="#" data-toggle="dropdown">Кабельная продукция</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-inner"> 
+							<ul class="list-unstyled">
+ 								<li><a href="#">Для iPhone</a></li>
+								<li><a href="#">Для Samsung</a></li>
+							</ul>
+							</div>
+						</div>
+					</li>
+					<li><a class="cat11" href="#">Компьютерное оборудование</a></li>
+					<li><a class="cat12" href="#">Сетевое оборудовние</a></li>
+					<li><a class="cat13" href="#">Колонки, наушники, радио, микрофоны, диктофоны </a></li>
+					<li><a class="cat14" href="#">Оборудование для ремонта и производства</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="col-md-9">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+ 				 <!-- Indicators -->
+  				<ol class="carousel-indicators">
+    				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+ 				</ol>
+  				<!-- Wrapper for slides -->
+  				<div class="carousel-inner" role="listbox">
+    				<div class="item active">
+      					<img src="img/slid1.png" alt="sony">
+      					<div class="carousel-caption"> 
+      					<h4>Новый SONY EXPERIA</h4>
+      					<p>Новый флагманский смартфон</p>
+ 						<p>Sony Xperia XZ Premium оснащён</p>
+						<p>5,5-дюймовымдисплеем с разрешением</p>
+						<p>4K и поддержкой HDR</p>       
+      					</div>
+    					</div>
+    				<div class="item">
+      					<img src="img/slid1.png" alt="sony">
+      					<div class="carousel-caption"> 
+      					<h4>Новый SONY EXPERIA</h4>
+      					<p>Новый флагманский смартфон</p>
+ 						<p>Sony Xperia XZ Premium оснащён</p>
+						<p>5,5-дюймовымдисплеем с разрешением</p>
+						<p>4K и поддержкой HDR</p>       
+      					</div>
+    				</div>
+    				<div class="item">
+      					<img src="img/slid1.png" alt="sony">
+      					<div class="carousel-caption"> 
+      					<h4>Новый SONY EXPERIA</h4>
+      					<p>Новый флагманский смартфон</p>
+ 						<p>Sony Xperia XZ Premium оснащён</p>
+						<p>5,5-дюймовымдисплеем с разрешением</p>
+						<p>4K и поддержкой HDR</p>       
+      					</div>
+    				</div>
+  				</div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="prev" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+			</div>
+		</div>
+		
+	</div>	
+	<div class="bg"></div>
+</div>
+</div>
+<div class="main">
+<div class="container-fluid">
+	<div class="container">
+	<div class="row">
+	 <div class="manufacturers">
+	 <div class="slider4">
+		  <div class="slide"><a href="#"><img src="img/manufacturer/asus.png"></a></div>
+		  <div class="slide"><a href="#"><img src="img/manufacturer/apple.png"></a></div>
+		  <div class="slide"><a href="#"><img src="img/manufacturer/lenovo.png" alt="Lenovo"></a></div>
+		  <div class="slide"><a href="#"><img src="img/manufacturer/acer.png" alt="Acer"></a></div>
+		  <div class="slide"><a href="#"><img src="img/manufacturer/samsung.png" alt="Samsung"></a></div>
+		  <div class="slide"><a href="#"><img src="img/manufacturer/asus.png"></a></div>
+		  <div class="slide"><a href="#"><img src="img/manufacturer/apple.png"></a></div>
+		  <div class="slide"><a href="#"><img src="img/manufacturer/lenovo.png" alt="Lenovo"></a></div>
+		  <div class="slide"><a href="#"><img src="img/manufacturer/acer.png" alt="Acer"></a></div>
+		  <div class="slide"><a href="#"><img src="img/manufacturer/samsung.png" alt="Samsung"></a></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="container">
+	<div class="row">
+		<div class="header"><h3>Акции и скидки</h3></div>		
+	</div>
+	</div>
+	<div class="container">
+	<div class="row">
+		  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs" role="tablist">
+	    <li role="presentation" class="active"><a href="#cabel" aria-controls="home" role="tab" data-toggle="tab">Кабельная продукция</a></li>
+	    <li role="presentation"><a href="#accum" aria-controls="profile" role="tab" data-toggle="tab">Аккумуляторы </a></li>
+	    <li role="presentation"><a href="#block" aria-controls="messages" role="tab" data-toggle="tab">Блоки питания,  зарядные устройства</a></li>
+	    <li role="presentation"><a href="#syst" aria-controls="settings" role="tab" data-toggle="tab">Системное  оборудование</a></li>
+	    <li role="presentation"><a href="#syst1" aria-controls="settings" role="tab" data-toggle="tab">Системное  оборудование</a></li>
+	    <li role="presentation"><a href="#ps" aria-controls="settings" role="tab" data-toggle="tab">Компьютерное оборудование</a></li>
+	  </ul>
+	</div>
+	</div>
+	<div class="container">
+	<div class="row">
+		<div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="product-thumb transition">
+		<div class="image">
+			<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+		</div>
+		<div class="caption">
+			<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+			<div class="code">Код товара: <span id="code">17489333</span></div>
+			<div class="raiting">
+				<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+				<span>5 отзывов</span>
+			</div>
+			<span class="price-tax">4 550 грн</span>
+			<p class="price">3 770 <span class="currency">грн.</span></p>
+		</div>
+		<div class="button-group">
+			<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>
+		</div>
+	</div>
+	</div>
+		<div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="product-thumb transition">
+		<div class="image">
+			<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+		</div>
+		<div class="caption">
+			<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+			<div class="code">Код товара: <span id="code">17489333</span></div>
+			<div class="raiting">
+				<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+				<span>5 отзывов</span>
+			</div>
+			<span class="price-tax">4 550 грн</span>
+			<p class="price">3 770 <span class="currency">грн.</span></p>
+		</div>
+	<div class="button-group">
+		<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+		<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+		<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>
+		
+	</div>
+	</div>
+	</div>
+		<div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="product-thumb transition">
+		<div class="image">
+			<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+		</div>
+		<div class="caption">
+			<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+			<div class="code">Код товара: <span id="code">17489333</span></div>
+			<div class="raiting">
+				<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+				<span>5 отзывов</span>
+			</div>
+			<span class="price-tax">4 550 грн</span>
+			<p class="price">3 770 <span class="currency">грн.</span></p>
+		</div>
+	<div class="button-group">
+		<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+		<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+		<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>
+		
+	</div>
+	</div>
+	</div>
+		<div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="product-thumb transition">
+		<div class="image">
+			<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+		</div>
+		<div class="caption">
+			<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+			<div class="code">Код товара: <span id="code">17489333</span></div>
+			<div class="raiting">
+				<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+				<span>5 отзывов</span>
+			</div>
+			<span class="price-tax">4 550 грн</span>
+			<p class="price">3 770 <span class="currency">грн.</span></p>
+		</div>
+	<div class="button-group">
+		<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+		<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+		<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>
+		
+	</div>
+	</div>
+	</div>		
+	</div>
+	</div>
+
+
+<!-- popular product -->
+	
+	<div class="row">
+	<div class="container" id="popular_head">
+		<div class="header"><h3>Популярные товары</h3></div>		
+	</div>
+	</div>
+	
+	<div class="row">
+	<div class="container">
+		  <!-- Nav tabs -->
+	    <ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="active"><a href="#cabel" aria-controls="home" role="tab" data-toggle="tab">Кабельная продукция</a></li>
+		    <li role="presentation"><a href="#accum" aria-controls="profile" role="tab" data-toggle="tab">Аккумуляторы </a></li>
+		    <li role="presentation"><a href="#block" aria-controls="messages" role="tab" data-toggle="tab">Блоки питания,  зарядные устройства</a></li>
+		    <li role="presentation"><a href="#syst" aria-controls="settings" role="tab" data-toggle="tab">Системное  оборудование</a></li>
+		    <li role="presentation"><a href="#syst1" aria-controls="settings" role="tab" data-toggle="tab">Системное  оборудование</a></li>
+		    <li role="presentation"><a href="#ps" aria-controls="settings" role="tab" data-toggle="tab">Компьютерное оборудование</a></li>
+	    </ul>
+	</div>
+	</div>
+	<div class="row" id="slider2">
+
+		<div class="slider3">
+		<div class="slide product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="product-thumb transition">
+				<div class="image">
+					<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+				</div>
+				<div class="caption">
+					<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+					<div class="code">Код товара: <span id="code">17489333</span></div>
+					<div class="raiting">
+						<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+						<span>5 отзывов</span>
+					</div>
+					<span class="price-tax">4 550 грн</span>
+					<p class="price">3 770 <span class="currency">грн.</span></p>
+				</div>
+				<div class="button-group">
+					<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+					<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+					<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>
+				</div>
+			</div>
+		</div>
+		<div class=" slide product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="product-thumb transition">
+				<div class="image">
+					<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+				</div>
+				<div class="caption">
+					<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+					<div class="code">Код товара: <span id="code">17489333</span></div>
+					<div class="raiting">
+						<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+						<span>5 отзывов</span>
+					</div>
+					<span class="price-tax">4 550 грн</span>
+					<p class="price">3 770 <span class="currency">грн.</span></p>
+				</div>
+				<div class="button-group">
+				<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+				<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+				<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>		
+				</div>
+			</div>
+		</div>
+		<div class=" slide product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="product-thumb transition">
+				<div class="image">
+					<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+				</div>
+				<div class="caption">
+					<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+					<div class="code">Код товара: <span id="code">17489333</span></div>
+					<div class="raiting">
+						<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+						<span>5 отзывов</span>
+					</div>
+					<span class="price-tax">4 550 грн</span>
+					<p class="price">3 770 <span class="currency">грн.</span></p>
+				</div>
+				<div class="button-group">
+				<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+				<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+				<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>
+				</div>
+			</div>
+		</div>
+		<div class=" slide product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="product-thumb transition">
+				<div class="image">
+					<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+				</div>
+				<div class="caption">
+					<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+					<div class="code">Код товара: <span id="code">17489333</span></div>
+					<div class="raiting">
+						<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+						<span>5 отзывов</span>
+					</div>
+					<span class="price-tax">4 550 грн</span>
+					<p class="price">3 770 <span class="currency">грн.</span></p>
+				</div>
+				<div class="button-group">
+				<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+				<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+				<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>	
+				</div>
+			</div>
+		</div>		
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<div class="row" id="cat_popular">
+
+	<div class="container">
+		<div class="row">
+		<div class="product-cat">
+			<h3>Блоки питания</h3>
+			<img src="img/cat_tab/prod1.png">
+		</div>
+		<div class="product-cat">
+			<h3>Сетевое оборудование</h3>
+			<img src="img/cat_tab/prod2.png">
+		</div>
+		<div class="product-cat">
+			<h3>Наушники</h3>
+			<img src="img/cat_tab/prod3.jpg">
+		</div>
+		<div class="product-cat">
+			<h3>Кабельная продукция</h3>
+			<img src="img/cat_tab/prod4.png">
+		</div>
+		</div>
+		
+	</div>
+	</div>
+	<div class="row" id="all_cat_btn">
+		<div class="reed_cat">
+		<button class="reed_more">
+			<span>Все категории</span>
+			<span><img src="img/reedmore.png"></span>				
+		</button>
+		</div>
+	</div>
+
+	<div class="row">  <!-- advantages -->
+		<div class="container">
+		<div class="header"><h3>Наши преимущества</h3></div>		
+		</div> 
+	</div>
+	<div class="container">
+	<div class="row" id="advantage">
+		<div class="advantage-layout">
+			<a href="#" class="payment">
+			<img src="img/advantage/payment.png">
+			<h4>Оплата при получении</h4>	
+			</a>		
+		</div>		
+		<div class="advantage-layout">
+			<a href="#" class="payment">
+			<img src="img/advantage/return.png">
+			<h4>Возврат и обмен</h4>
+			</a>	
+		</div>
+		<div class="advantage-layout ">
+			<a href="#" class="payment">
+			<img src="img/advantage/delivery.png">
+			<h4>Быстрая доставка</h4>
+			</a>		
+		</div>
+		<div class="advantage-layout ">
+			<a href="#" class="payment">
+			<img src="img/advantage/garantee.png">
+			<h4>Гарантия качества</h4>		
+			</a>	
+		</div>
+		<div class="advantage-layout">			
+			<a href="#" class="payment"><img src="img/advantage/onneclick.png">	
+			<h4>Покупка в один клик</h4>
+			</a>		
+		</div>
+
+		
+	</div>	 <!-- end advantages -->
+	</div>
+		<!-- news and posts -->
+	<div class="container">
+	<div class="row">  <!-- viewed -->
+		<div class="header"><h3>Новости и статьи</h3></div>		
+	</div> 
+	</div>
+	<div class="container">
+	<div class="row" id="news">
+		<div class="new-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="img/news/new1.jpg">
+			<h4>Презентация нового IPhone X</h4>
+			<p>В нью-Йорке, 14 сентября 2017 года прошла презентация нового IPhone X, многие смогли воочию убедиться</p>
+			<div class="date">16.09.17</div>			
+		</div>
+		<div class="new-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="img/news/new2.jpg">
+			<h4>Релиз MacOS High Sierra</h4>
+			<p>Новое бесплатное обновление macOS уже доступно для установки. Нас ожидают изменения</p>
+			<div class="date">16.09.17</div>			
+		</div>
+		<div class="new-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="img/news/new4.jpg">
+			<h4>Безрамочный OUKITEL Mix 2 </h4>
+			<p>Свежий безрамочник OUKITEL Mix 2 очень похож на Xiaomi MIX 2, но стоит намного дешевле</p>
+			<div class="date">16.09.17</div>			
+		</div>
+		<div class="new-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="img/news/new4.jpg">
+			<h4>Безрамочный OUKITEL Mix 2 </h4>
+			<p>Свежий безрамочник OUKITEL Mix 2 очень похож на Xiaomi MIX 2, но стоит намного дешевле</p>
+			<div class="date">16.09.17</div>			
+		</div>
+		<div class="all_news col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<button class="reed_more">
+				<span>Читать далее</span>
+				<span><img src="img/reedmore.png"></span>				
+			</button>
+		</div>		
+	</div>	<!-- end news and posts -->
+	</div>
+	<div class="container">
+	<div class="row">  <!-- viewed -->
+		<div class="header"><h3>Просмотренные</h3></div>		
+	</div> 
+	</div>
+	<div class="container">
+	<div class="row">
+	  <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="product-thumb transition">
+		  <div class="image">
+			<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+		  </div>
+		  <div class="caption">
+			<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+			<div class="code">Код товара: <span id="code">17489333</span></div>
+			<div class="raiting">
+				<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+				<span>5 отзывов</span>
+			</div>
+			<span class="price-tax">4 550 грн</span>
+			<p class="price">3 770 <span class="currency">грн.</span></p>
+		  </div>
+		  <div class="button-group">
+			<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>	
+		  </div>
+		</div>
+	  </div>
+	  <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="product-thumb transition">
+		  <div class="image">
+			<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+		  </div>
+		  <div class="caption">
+			<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+			<div class="code">Код товара: <span id="code">17489333</span></div>
+			<div class="raiting">
+				<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+				<span>5 отзывов</span>
+			</div>
+			<span class="price-tax">4 550 грн</span>
+			<p class="price">3 770 <span class="currency">грн.</span></p>
+		  </div>
+		  <div class="button-group">
+			<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>	
+		  </div>
+		</div>
+	  </div>
+	  <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="product-thumb transition">
+		  <div class="image">
+			<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+		  </div>
+		  <div class="caption">
+			<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+			<div class="code">Код товара: <span id="code">17489333</span></div>
+			<div class="raiting">
+				<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+				<span>5 отзывов</span>
+			</div>
+			<span class="price-tax">4 550 грн</span>
+			<p class="price">3 770 <span class="currency">грн.</span></p>
+		  </div>
+		  <div class="button-group">
+			<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>	
+		  </div>
+		</div>
+	  </div>
+	  <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<div class="product-thumb transition">
+		  <div class="image">
+			<a href="#"><img src="img/prod/prod1.jpg" alt="prod" title="iPhone" class="img-responsive" /></a>
+		  </div>
+		  <div class="caption">
+			<h4><a href="#">Huawei Y3 II Dual Sim Black</a></h4>
+			<div class="code">Код товара: <span id="code">17489333</span></div>
+			<div class="raiting">
+				<div class="star"><img src="img/prod/stars.png" alt="raiting"></div>
+				<span>5 отзывов</span>
+			</div>
+			<span class="price-tax">4 550 грн</span>
+			<p class="price">3 770 <span class="currency">грн.</span></p>
+		  </div>
+		  <div class="button-group">
+			<button type="button" data-toggle="tooltip" title="Добавить в корзину"><span class="bskt"><img src="img/prod/basket.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в сравнение"><span class="rtng"><img src="img/prod/rating.png"></span></button>
+			<button type="button" data-toggle="tooltip" title="Добавить в список желаний" class="wishlist_btn"><span class="wshlst"><img src="img/prod/wishlist.png"></span></button>	
+		  </div>
+		</div>
+	  </div>		
+	</div>
+	</div>	
+	<!-- text bottom -->
+	
+	</div> <!--end main cintainer-->
+</div><!-- end main -->
+
+</div>
+</div>
+
+
+<div class="left_menu">
+	<ul>
+		<li class="left_order"><a href="#"><span>Как заказать</span><img src="img/left_basket.png"></a></li>
+		<li class="left_pay"><a href="#"><span>Оплата</span><img src="img/left_pay.png"></a></li>
+		<li class="left_contact"><a href="#"><span>Контакты</span><img src="img/left_contact.png"></a></li>
+		<li class="left_delivery"><a href="#"><span>Доставка</span><img src="img/left_delivery.png"></a></li>
+	</ul>
+</div>
+<div id="toTop"><img src="img/toTop.png"></div>
+<footer>
+	<div class="container-fluid">
+	<div class="container">
+	<div class="row" id="text">
+			<div class="header"><h3>О нас</h3></div>
+			<div class="text">
+				<p>Компания К2Трейд была основана в 2016 году в Одессе. С первых дней своей работы предприятие зарекомендовало себя как надежный партнер, который не просто качественно выполняет свою работу, но и постоянно работает над  развитием каналов поставки  и ассортимента. Компания успешно развивает такие сегменты как: компьютерная и цифровая техника, сетевое оборудование, кабельная продукция ,видеонаблюдение, аккумуляторные батареи, элементы питания измерительное оборудование и оборудование для ремонта техники.</p>
+			</div>	
+			<button class="reed_more">
+				<span>Читать далее</span>
+				<span><img src="img/reedmore.png"></span>				
+			</button>	
+		</div>	
+		</div>
+	<div id="footer_top">
+ 	  <div class="container"> 
+ 	  <div class="row">	
+ 		<div class="col">
+ 			<div class="footer_logo">
+ 				<a href="#"><img src="img/footer/footer_logo.png"></a>
+ 			</div>
+ 			<div class="adress">
+ 				<h6>Адрес</h6>
+ 				<p>г. Киев, ул. Приречная 25a,</p>
+ 				<p>Интернет - магазин</p>
+ 			</div>
+ 			<div class="social">
+ 				<h6>Мы в сосетях</h6>
+ 				<ul>
+ 					<li><a href="#" class="fb sprite" title="Facebook" target="_blank"></a></li>
+ 					<li><a href="#" class="google_plus sprite" title="G+" target="_blank"></a></li>
+ 					<li><a href="#" class="twitter sprite" title="Twitter" target="_blank"></a></li>
+ 					<li><a href="#" class="youtube sprite" title="YouTube" target="_blank"></a></li>
+ 				</ul>
+ 			</div> 			
+ 		</div>
+ 		<div class="col" id="footer_category">
+ 			<h6>Каталог</h6>
+ 			<ul>
+ 				<li><a href="#">Аккумуляторы</a></li>
+ 				<li><a href="#">Блоки питания, зарядные устройства</a></li>
+ 				<li><a href="#">Кабельная продукция</a></li>
+ 				<li><a href="#">Компьютерное оборудование</a></li>
+ 				<li><a href="#">Сетевое оборудование</a></li>
+ 				<li><a href="#">Колонки, наушники, радио микрофоны, диктофоны</a></li>
+ 				<li><a href="#">Оборудование для ремонта и производства</a></li>
+ 				<li><a href="#">Все категории</a></li>
+ 			</ul> 			
+ 		</div>
+ 		<div class="col">
+ 			<h6>Клиентам</h6>
+ 			<ul>
+ 				<li><a href="#">Вход в личный кабинет</a></li>
+ 				<li><a href="#">О нас</a></li>
+ 				<li><a href="#">Оплата и доставка</a></li>
+ 				<li><a href="#">Обмен и возврат</a></li>
+ 				<li><a href="#">Контактная информация</a></li>
+ 				<li><a href="#">Оптовым клиентам</a></li>
+ 				<li><a href="#">Новости</a></li>
+ 				<li><a href="#">Вакансии</a></li>
+ 			</ul> 			
+ 		</div>
+ 		<div class="col" id="contact_info">
+ 			<h6>Контактная информация</h6>
+ 			<ul>
+ 				<li><a href="#" title="vodafone" class="sprite vodafone">+38 (050) 987 65 43</a></li>
+ 				<li><a href="#" title="kievstar" class="sprite kievstar">+38 (068) 987 65 43</a></li>
+ 				<li><a href="#" title="Life" class="sprite life">+38 (063) 987 65 43</a></li>
+ 				<li><a href="#" title="Phone" class="sprite phone">+38 (056) 404 41 25</a></li>
+ 				<li><a href="#" title="Phone" class="sprite phone">+38 (065) 443 05 84</a></li>
+ 				<li><a href="#" title="E-mail" class="sprite email">shop.k2trade@gmail.com</a></li>
+ 			</ul>		
+ 		</div>
+ 		<div class="col">
+ 			<div class="time">
+ 				<h6>Режим работы магазина</h6>
+ 				<p>Пн - Пт: 9:00 - 18:00</p>
+ 				<p>Сб - Вс: выходной</p> 				
+ 			</div>
+ 			<div class="callme">
+ 				<button>
+ 					<span class="call">Перезвоните мне</span> <span><img src="img/footer/calback.png"></span>
+ 				</button>
+ 				
+ 			</div>
+ 			<div class="pay">
+ 				<h6>Принимаем к оплате</h6>
+ 				<ul>
+ 					<li><a href="#" class="sprite master" target="_blank" title="MasterCard"></a></li>
+ 					<li><a href="#" class="sprite privat" target="_blank" title="Privat Bank"></a></li>
+ 					<li><a href="#" class="sprite visa" target="_blank" title="VISA"></a></li>
+ 				</ul>
+ 			</div>	
+ 		</div> 
+ 	  </div>
+ 	  </div>		
+ 	</div>
+ 	<div id="footer_bottom">
+ 		<div class="container"> 
+ 	  	<div class="row">	
+ 		<div class="col-md-6" id="promodex_logo">
+ 		<p>Разработано в</p><a href="promodex"><img src="img/footer/promodex.png" alt="promodex" title="promodex"></a> 			
+ 		</div>
+ 		<div class="col-md-6" id="copy">
+ 		<p>Все права защищены</p>
+ 		<p>©&nbsp;Интернет-магазин «К2Трейд™» </p> 			
+ 		</div>
+ 	</div>
+ 	</div>
+ 	</div>
+ </div>	
+</footer>
+<script src="lib/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="lib/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider4').bxSlider({
+    slideWidth: 220,
+    minSlides: 1,
+    maxSlides: 5,
+    moveSlides: 1,
+    slideMargin: 5
+  });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider3').bxSlider({
+    slideWidth: 290,
+    minSlides: 1,
+    maxSlides: 4,
+    moveSlides: 1,
+    slideMargin: 10
+  });
+});
+</script>
+</body>
+</html>

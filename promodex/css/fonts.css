@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "HelveticaThin";
+	src: url("../font/HelveticaNeue/HelveticaNeueCyr-Thin.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "HelveticaRoman";
+	src: url("../font/HelveticaNeue/HelveticaNeueCyr-Roman.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "HelveticaRLight";
+	src: url("../font/HelveticaNeue/HelveticaNeueCyr-Light.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "HelveticaMedium";
+	src: url("../font/HelveticaNeue/HelveticaNeueCyr-Medium.otf");
+	font-style: normal;
+	font-weight: normal;
+}
