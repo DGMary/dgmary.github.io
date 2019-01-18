@@ -10,6 +10,7 @@
     <meta name="description" content="Люблю адаптивную и кроссбраузерную верстку, чистый и лаконичный код, pixel perfect">	
 	<link rel="icon" href="images/html5_css3.png" type="image/x-icon">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css" />
@@ -30,13 +31,13 @@
 		<span class="burger"><i class="fa fa-bars" aria-hidden="true"></i></span>
 	</nav>
 </header>
-<div id="about_me" class="about">
-	<div class="text">
-	<h4 class="animated">Привет, меня зовут Мария</h4>
-	<h2 class="animated">Я Front-end developer</h2>
-	<h5 class="animated">Верстаю  сайты адаптивно, валидно, кроссбраузерно</h5>
+<section id="about_me" class="about">
+	<div class="about-content">
+		<div class="text">Привет, меня зовут Мария</div>
+		<div class="text">Я Front-end developer</div>
+		<div class="text white-color text-small">Верстаю  сайты адаптивно, валидно, кроссбраузерно. Изучаю js</div>		
 	</div>
-</div>
+</section>
 <!--portfolio-->
 <section id="portfolio" >
 <div class="jumbotron">
@@ -89,7 +90,7 @@
 			<p>Адаптивная верстка</p>
 		</span>
 	  </a>
-	</div>	
+	</div>
 
 	</div>
 	</div>
@@ -97,14 +98,16 @@
 </section>
 <!--skils-->
 <section id="skils">
-<h2>мои навыки</h2>
+<div class="h2">
+	<span>мои навыки</span>
+</div>
 <h5>html </h5>
 <div class="progress">
   <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
     <span class="sr-only">80% Complete (success)</span>
   </div>
 </div>
-<h5>css</h5>
+<h5>css/scss</h5>
 <div class="progress">
   <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
     <span class="sr-only">75% Complete</span>
@@ -126,13 +129,17 @@
 <!--footer-->
 <footer id="contact">
 	<div class="contacts">
-		<span><a href="https://vk.com/id15236942" data-toggle="tooltip"  title="vk"><i class="fa fa-vk" aria-hidden="true"></i></a></span>
-		<span><a href="https://www.facebook.com/" data-toggle="tooltip" title="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
-		<span><a href="https://www.linkedin.com/in/mariya-mynkina-77b65165/" data-toggle="tooltip"  title="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
-		<span><a href="https://github.com/DGMary" data-toggle="tooltip"  title="github"><i class="fa fa-github" aria-hidden="true"></i></a></span>
-		<span class="email"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>mblnkinakk@gmail.com</span>
-		<span class="skype"><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>mynkina_mary28</span>
-		<span class="phone"><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i></a>093-006-47-82</span>
+		<div class="contacts-top-items	">
+			<span><a href="https://vk.com/id15236942" data-toggle="tooltip"  title="vk"><i class="fa fa-vk" aria-hidden="true"></i></a></span>
+			<span><a href="https://www.facebook.com/mblnkina" data-toggle="tooltip" title="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+			<span><a href="https://www.linkedin.com/in/mariya-mynkina-77b65165/" data-toggle="tooltip"  title="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+			<span><a href="https://github.com/DGMary" data-toggle="tooltip"  title="github"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+		</div>
+		<div class="contacts-bottom-items">
+			<span class="email"><a class="footer-link" href="mailto:mblnkinakk@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>mblnkinakk@gmail.com</a></span>
+			<span class="skype"><a class="footer-link" href="skype:mynkina_mary28"><i class="fa fa-skype" aria-hidden="true"></i>mynkina_mary28</a></span>
+			<span class="phone"><a class="footer-link" href="tel:0999559077"><i class="fa fa-mobile" aria-hidden="true"></i>099-9559077</a></span>
+		</div>
 	</div>	
 	<div class="copy">&copy Мынкина Мария</div>
 </footer>

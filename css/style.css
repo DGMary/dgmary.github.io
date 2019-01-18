@@ -5,11 +5,7 @@
 }
 a:hover,
 a:active{
-	color:#4EA037;
-	font-size:30px;
-	transition-property: font-size;
-    transition-duration: 0.5s;
-    transition-delay: 0.5s;
+
 }
 img{
 	width: 100%;
@@ -17,7 +13,7 @@ img{
 }
 body{
 	margin: 0;
-	font: 14px Arial, sans-serif;
+	font: 14px  'Ubuntu', sans-serif;
 	color: #fff;
 	background-color: #fff;	
 	margin: 0 auto;
@@ -64,29 +60,33 @@ body{
 	text-transform: uppercase;	
 	margin: 10px;
 }
+
 .about{
 	position: relative;
 }
 #about_me{
-min-height: 300px;
-background: #29ccb6;
+	margin-top: 50px;
+	padding: 50px 0;
+	background: #29ccb6;
+}
+.about-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .text{
-	margin-top: 50px;
+	font-size: 22px;
+	line-height: 2;
 	text-align: center;
-	color: #fff;
-	font-weight: bold;
-	text-shadow: 3px 2px #000;
-	z-index: 10;
+	color: #333333;
 }
-.text h4{
-	color: #003e3e;
-	font-size: 34px;
-	line-height: 3;
-	text-shadow: none;
-	font-weight: bold;
-	-webkit-animation-duration: 5s;
+.white-color {
+	color: #ffffff;
 }
+.text-small {
+	font-size: 18px;
+}
+
 .text h2{
 	color:#fff;
 	text-transform: uppercase;
@@ -169,7 +169,7 @@ margin:20px;
 }
 .progress{
 	width: 35%;
-	margin:0 auto;
+	margin:0 auto 15px;
 }
 /*footer*/
 footer{
@@ -194,10 +194,33 @@ footer .phone{
 footer i{
 	color: #014a49;
 	margin:4px 10px;
+	transition: .3s;
 }
 footer i:hover{
-	color:#01137f;
+	color:#000000;
 }
 .copy{
 	margin:16px auto 0;
+}
+.footer-link {
+	font-size: 16px;
+	transition: .4s;
+	margin-bottom: 5px;
+}
+.footer-link:hover {
+	color: #ffffff;
+	opacity: .8;
+	text-decoration: none;
+}
+
+/* new style */
+.h2 {
+	color: #333333;
+	font-weight:600;
+	text-align: center;
+	margin: 20px auto;
+	line-height: 2;	
+}
+.contacts-top-items	 {
+	margin-bottom: 15px;
 }
