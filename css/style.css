@@ -60,6 +60,28 @@ body{
 	text-transform: uppercase;	
 	margin: 10px;
 }
+.close-icon {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	position: relative;
+	display: none;
+}
+#close-svg-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+.menu-opened .close-icon {
+	display: inline-block;
+}
+.menu-opened i.fa {
+	display: none;
+}
+
+/* about  */
 
 .about{
 	position: relative;
