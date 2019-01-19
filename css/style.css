@@ -53,12 +53,30 @@ body{
 	display: inline-block;
 	margin: 10px;		
 }
-.nav_top  a{
+.nav_top  a {
 	font-size: 18px;
 	color: #000;
 	text-decoration: none;
 	text-transform: uppercase;	
 	margin: 10px;
+	border-width: 0;
+	transition: .3s;
+	position: relative;
+}
+.nav_top .nav-link-item:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	background: #12aab9;
+	width: 0;
+	height: 1px;
+	left: 0;
+	right: 0;
+	top: 100%;
+	transition: width .3s;
+}
+.nav_top .nav-link-item:hover:after {
+	width: 100%;
 }
 .close-icon {
 	width: 22px;
