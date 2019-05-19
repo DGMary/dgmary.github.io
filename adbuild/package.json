@@ -1,11 +1,11 @@
 {
-  "name": "project",
+  "name": "adbuild",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Anzhelika Bielykh",
+  "author": "Mynkina Mariya",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.5",
