@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".select").styler(),$(".burger-menu").on("click",function(e){e.preventDefault(),$(this).hasClass("opened")?$(this).removeClass("opened"):$(this).addClass("opened")}),$(".grid").masonry({itemSelector:".grid-item"})});
