@@ -1,0 +1,8 @@
+@import "_mixins";
+
+@include font-face("gotham-pro", "../fonts/GothamPro/GothamPro");
+@include font-face("gothampro-black", "../fonts/GothamProBlack/GothamPro-Black");
+@include font-face("gothampro-bold", "../fonts/GothamProBold/GothamPro-Bold");
+@include font-face("gothampro-italic", "../fonts/GothamProItalic/GothamPro-Italic");
+@include font-face("gothampro-medium", "../fonts/GothamProMedium/GothamPro-Medium");
+@include font-face("gothampro-mediumitalic", "../fonts/GothamProMediumItalic/GothamPro-MediumItalic");
