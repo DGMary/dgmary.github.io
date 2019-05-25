@@ -173,6 +173,9 @@ ul {
 
 }
 .languages {
+  .copy {
+    display: none;
+  }
   width:54px;
   .jq-selectbox {
     &__select {
@@ -215,6 +218,7 @@ ul {
       border:none;
     }
     li {
+      font-family: $ftgotham;
       &.selected {
         background:$colorGreen;
       }
@@ -230,6 +234,9 @@ ul {
     }
   }
 }
+.email__holder {
+  display: none;
+}
 
 
 // burger menu
@@ -237,66 +244,65 @@ ul {
   position: absolute;
   top: 0;
   bottom:0;
-  left: 50%;
+  left: 0;
   width: 100%;
-  max-width: 375px;
-  background: #ddd;
-  transform: translate(-50%,0);
+  max-width: calc(100% - 120px);
 }
 .burger {
   &-panel {
     height: 50px;
     position: relative;
-    border-bottom: 1px solid #fff;
   }
   &-menu {
-    width: 25px;
-    height: 16px;
+    width: 34px;
+    height: 25px;
     padding: 0;
     position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translate(0, -50%);
+    left: 20px;
+    top: 25px;
     cursor: pointer;
     z-index: 6;
     transition: all .3s;
     span {
       width: 100%;
-      height: 1px;
-      background: #333;
+      height: 2.6px;
+      background: $colorWhite;
       position: absolute;
       left: 0;
       transition: .25s ease-in-out;
-      opacity: .6;
+      border-radius: 2px;
+
       &:nth-child(1) {
         top: 0;
         transform-origin: left center;
       }
       &:nth-child(2) {
-        top: 7px;
+        top: 10px;
         transform-origin: left center;
       }
       &:nth-child(3) {
-        top: 14px;
+        top: 20px;
         transform-origin: left center;
       }
     }
-    &.opened {
-      span {
-        &:nth-child(1) {
-          transform: rotate(45deg);
-          top: -3px;
-          left: 2px;
-        }
-        &:nth-child(2) {
-          width: 0;
-          opacity: 0;
-        }
-        &:nth-child(3) {
-          transform: rotate(-45deg);
-          top: 15px;
-          left: 2px;
-        }
+  }
+}
+.opened {
+  .burger-menu {
+    span {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        top: -3px;
+        left: 2px;
+      }
+      &:nth-child(2) {
+        width: 0;
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 20px;
+        left: 1px;
       }
     }
   }
@@ -856,8 +862,3 @@ ul {
   }
 }
 
-@media (max-width: 768px) {
-  .header-mobile {
-    display: block;
-  }
-}

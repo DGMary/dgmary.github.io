@@ -3,10 +3,10 @@ $(document).ready(function(){
 
   $('.burger-menu').on('click', function (e) {
     e.preventDefault();
-    if ($(this).hasClass('opened')) {
-        $(this).removeClass('opened');
+    if ($(this).parents('.header').hasClass('opened')) {
+        $(this).parents('.header').removeClass('opened');
     } else {
-        $(this).addClass('opened');
+        $(this).parents('.header').addClass('opened');
       }
   });
   $('.partner__slider').not('.slick-initialized').slick({
@@ -15,16 +15,13 @@ $(document).ready(function(){
     dots: false,
     arrows: true,
     infinite: false,
-    autoplay: true,
     responsive: [ 
         {
             breakpoint: 1023,
             settings: {
             infinite: true,
             arrows: false,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 8000
+            dots: true
             }
         }   
         ]
