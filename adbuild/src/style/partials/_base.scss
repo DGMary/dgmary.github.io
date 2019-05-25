@@ -607,6 +607,9 @@ ul {
     line-height: 1.4;
     font-family: $ftgothamproBold;
     margin-bottom: 25px;
+    span {
+      width: calc(100% - 69px);
+    }
   }
   &__holder {
     font-size: 20px;
