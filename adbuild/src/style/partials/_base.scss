@@ -74,7 +74,7 @@ ul {
 .top__content {
   min-height: 768px;
   background-color: #2c938b;
-  background-image: url(/img/top-bg.jpg);
+  background-image: url(../img/top-bg.jpg);
   background-repeat: no-repeat;
   background-position: center 70%;
   background-size: cover;
@@ -425,7 +425,7 @@ ul {
   &__bottom {
     padding: 20px 0 25px;
     background-color: $footerColor;
-    background-image: url(/img/footer-bg.svg);
+    background-image: url(../img/footer-bg.svg);
     background-repeat: repeat-x;
     background-position: left bottom;    
   }
@@ -552,10 +552,10 @@ ul {
     }
     .slick {
       &-arrow {
-        background-image: url(/img/ic-arrow.svg);
+        background-image: url(../img/ic-arrow.svg);
         background-color: $colorWhite;
         &:hover {
-          background-image: url(/img/ic-arrow-active.svg);
+          background-image: url(../img/ic-arrow-active.svg);
         }       
       }
       &-prev {
@@ -654,10 +654,10 @@ ul {
     width: 100%;
     .slick {
       &-arrow {
-        background-image: url(/img/arrow.svg);
+        background-image: url(../img/arrow.svg);
         background-color: transparent; 
         &:hover {
-          background-image: url(/img/arrow-active.svg);
+          background-image: url(../img/arrow-active.svg);
         }
       }
       &-prev {
@@ -762,7 +762,7 @@ ul {
       display: block;
       width: 74px;
       height: 57px;
-      background-image: url(/img/quotes.svg);
+      background-image: url(../img/quotes.svg);
       background-repeat: no-repeat;
       right: 10px;
       bottom:-15px;
@@ -825,7 +825,7 @@ ul {
       cursor: pointer;
       margin: 0;
       &:hover {
-        background-image: url(/img/ic-arrow-active.svg);
+        background-image: url(../img/ic-arrow-active.svg);
       }
     }
   }
@@ -840,16 +840,16 @@ ul {
     display: inline-flex;
     width: 44px;
     height: 44px;
-    background-image: url(/img/ic-arrow.svg);
+    background-image: url(../img/ic-arrow.svg);
   }
   &-ad {
-    background-image: url(/img/ic-ad.svg);
+    background-image: url(../img/ic-ad.svg);
   }
   &-dev {
-    background-image: url(/img/ic-dev.svg);
+    background-image: url(../img/ic-dev.svg);
   }
   &-build {
-    background-image: url(/img/ic-build.svg);
+    background-image: url(../img/ic-build.svg);
   }
 }
 
