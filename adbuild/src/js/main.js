@@ -76,7 +76,7 @@ $(document).ready(function(){
         anchorXUnits : 'fraction',
         anchorYUnits : 'pixels',
         opacity : 0.75,
-        src : '/img/marker.svg'
+        src : 'img/marker.svg'
     }))
 });
   var markerVectorLayer = new ol.layer.Vector({
