@@ -95,6 +95,7 @@ ul {
     color: $colorWhite;
   }
   .btn {
+    font-family: $ftgotham;
     height: 57px;
     &__holder {
       text-align: left;
@@ -345,37 +346,39 @@ ul {
     z-index: -1;
   }
 }
-.main-info {
-  &__holder {
-    display: flex;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 70px;
-    .info {
-      display: inline-block;
-      max-width: 510px;
-      &-inner {
+.main {
+  &-info {
+    &__holder {
+      display: flex;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 70px;
+      .info {
         display: inline-block;
-        width: 100%;
+        max-width: 510px;
+        &-inner {
+          display: inline-block;
+          width: 100%;
+        }
       }
     }
-  }
-  &__col {
-    width: 50%;
-    &:first-child {
-      padding-right: 10px;
+    &__col {
+      width: 50%;
+      &:first-child {
+        padding-right: 10px;
+      }
     }
-  }
-  &__text {
-    .text {
-      max-width: 420px;
-      margin:20px 0 30px;
+    &__text {
+      .text {
+        max-width: 420px;
+        margin:20px 0 30px;
+      }
     }
-  }
-  &__list {
-    padding-left: 20px;
-    list-style: disc;
-    margin-left: 5px;
+    &__list {
+      padding-left: 20px;
+      list-style: disc;
+      margin-left: 5px;
+    }
   }
 }
 
