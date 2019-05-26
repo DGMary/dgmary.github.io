@@ -42,16 +42,21 @@ $(document).ready(function(){
         ]
   });
 
-  // $('.review__slider').not('.slick-initialized').slick({
-  //   centerMode: true,
-  //   slidesToShow: 3,
-  //   infinite: true,
-  //   arrows: true,
-  //   accessibility: false,
-  //   touchMove: false,
-  //   dots: true
-  // });
-
+  $('.owl-carousel').owlCarousel({
+    center: true,
+    items:1,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        767:{
+            items:3,
+            animateOut: "fadeOut",
+            animateIn: "fadeIn",
+            smartSpeed: 800,
+        }
+    }
+});
 
 
   $('.grid').masonry({
