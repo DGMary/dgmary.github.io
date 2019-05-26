@@ -6,3 +6,4 @@
 //= vendor/masonry/masonry.pkgd.min.js
 //= vendor/slick/slick.min.js
 //= vendor/owl/owl.carousel.min.js
+//= vendor/modal/modal.js

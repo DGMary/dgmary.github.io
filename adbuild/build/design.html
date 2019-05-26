@@ -230,18 +230,17 @@
                       <div class="form__title">
                               Написать нам
                       </div>
-                      <form action="" class="form__holder">
-  
-                          <div class="form__item">
-                              <input type="text" class="input" placeholder="Имя">
+                      <form action="" class="form__holder form_validate" id="contact-form">
+                          <div class="form__item input-holder">
+                              <input type="text" class="input" placeholder="Имя" data-validate="required-name">
                               <span class="form__error">Заполните это поле</span>
                           </div>
-                          <div class="form__item">
-                              <input type="text" class="input" placeholder="Телефон">
+                          <div class="form__item input-holder">
+                              <input type="text" class="input validate_phone" placeholder="Телефон" data-validate="required-number">
                               <span class="form__error">Не верный формат</span>
                           </div>
-                          <div class="textarea-holder">
-                              <textarea  rows="3" placeholder="Что вас интересует?" class="textarea"></textarea>
+                          <div class="textarea-holder input-holder">
+                              <textarea  rows="3" placeholder="Что вас интересует?" class="textarea" data-validate="required-textarea"></textarea>
                               <span class="form__error">Что вас интересует?</span>
                           </div>
                           <div class="btn__holder">

@@ -1,5 +1,30 @@
 $(document).ready(function(){
   $('.select').styler();
+  $('.validate_phone').mask('+38 (999) 999 99 99');
+  $('.form_validate').formValidation();
+
+  function formThx (id , url) {
+    $(id).formValidation().on('submit', function (e) {
+      e.preventDefault();
+      var main_modal = $('#modal-main');			    
+      if (!$(this).find('.input-holder').hasClass('error')) {
+        $(this).find()
+
+        main_modal.find(".modal-dialog").load( url , function() {main_modal.modal('show');});
+      }
+    });
+  };  
+  formThx ('#contact-form' , "/modals/thx.html");
+
+  function scrollToForm(){
+    $(".to-form").on("click", function (event) {     
+      event.preventDefault(); 
+      var id  = $(this).data('href'),
+        top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+    });
+  };
+  scrollToForm();
 
   $('.burger-menu').on('click', function (e) {
     e.preventDefault();
@@ -9,6 +34,7 @@ $(document).ready(function(){
         $(this).parents('.header').addClass('opened');
       }
   });
+
   $(document).mouseup(function (e){
 		var div = $(".header"); 
 		if (!div.is(e.target) && div.has(e.target).length === 0) { 
@@ -101,4 +127,32 @@ $(document).ready(function(){
     style : iconStyle
   });
   map.addLayer(markerVectorLayer);
+  
+  
+initModal();
+/* modals */
+  function initModal() {
+    var main_modal = $('#modal-main');      
+    // при закриванні модалі
+    main_modal.on('hidden.bs.modal', function () {});
+
+    // при показуванні модалі
+    main_modal.on('show.bs.modal', function () {});
+
+    // клік по підкладці модалі
+    $(document).on('click', '.modal-backdrop', function () {});
+
+    $(document).on('click', '[data-openmodal]', function(e) {
+          e.preventDefault();
+          
+      var link = $(this).data('openmodal');
+      main_modal.find('.modal-dialog').load(link, function() {
+        main_modal.modal('show');
+
+      })
+    })
+  }
+
+
+
 })
