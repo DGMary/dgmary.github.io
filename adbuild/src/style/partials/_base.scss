@@ -406,9 +406,6 @@ ul {
     &__item {
       font-size:18px; 
       margin-right: 32px;   
-      a:hover {
-        text-decoration:underline;
-      } 
     }
   }
   &__link-holder {
@@ -458,6 +455,7 @@ ul {
   }
   .textarea,
   .input {
+    height: 50px; 
     padding: 10px 10px 3px 12px;
     color: $colorWhite;
     background-color:transparent;
@@ -472,9 +470,7 @@ ul {
       font-family: $ftgothamproItalic;
     }
   }
-  .input {
-    height: 50px; 
-  }
+
   .form {
     &__title {
       color: $colorWhite;
@@ -629,6 +625,7 @@ ul {
       margin-right: 25px;
       background-repeat: no-repeat;
       margin-top: 5px;
+      background-size: cover;
     }
   }
   &__item {
@@ -643,7 +640,7 @@ ul {
       margin: 0 35px;
     }
     &:hover {
-      box-shadow: 5px 5px 20px rgba(5, 97, 101, 0.5);
+      box-shadow: 5px -1px 20px rgba(5, 97, 101, 0.65);
     }
   }
 }
