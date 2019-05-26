@@ -985,6 +985,23 @@ ul {
     z-index: 1040;
     background-color: rgba(0, 0, 0, 0.32);
   }
+  &-content {
+    max-width: 500px;
+    box-shadow: 5px 5px 20px rgba(5, 97, 101, 0.5);
+    padding:20px 30px;
+    border-radius: 5px;
+  }
+  &-title {
+    text-align: center;
+    img {
+      margin: 5px auto;
+    }
+  }
+  &-text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 .close-modal {
   position: absolute;
@@ -998,7 +1015,7 @@ ul {
   &:after {
     content: '';
     width: 2px;
-    height: 15px;
+    height: 20px;
     background: #999999;
     display: block;
     position: absolute;

@@ -8,8 +8,7 @@ $(document).ready(function(){
       e.preventDefault();
       var main_modal = $('#modal-main');			    
       if (!$(this).find('.input-holder').hasClass('error')) {
-        $(this).find()
-
+        $(this).find(".input, .textarea").val("");
         main_modal.find(".modal-dialog").load( url , function() {main_modal.modal('show');});
       }
     });
