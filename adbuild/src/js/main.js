@@ -13,7 +13,7 @@ $(document).ready(function(){
       }
     });
   };  
-  formThx ('#contact-form' , "/modals/thx.html");
+  formThx ('#contact-form' , "modals/thx.html");
 
   function scrollToForm(){
     $(".to-form").on("click", function (event) {     
