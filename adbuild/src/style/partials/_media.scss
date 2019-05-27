@@ -489,6 +489,18 @@
   .link__more {
     margin-top: 10px;
   }
+  .header  {
+    &.opened  {
+      .header__right-content {
+        transform: translateX(0);
+      }
+    }
+    &__right-content {
+      width: 100%;
+      left: 0;
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @media (pointer: coarse) {
