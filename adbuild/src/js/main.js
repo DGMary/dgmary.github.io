@@ -29,15 +29,18 @@ $(document).ready(function(){
     e.preventDefault();
     if ($(this).parents('.header').hasClass('opened')) {
         $(this).parents('.header').removeClass('opened');
+        $('body').css('overflow' , 'auto');
     } else {
         $(this).parents('.header').addClass('opened');
+        $('body').css('overflow' , 'hidden');
       }
   });
 
   $(document).mouseup(function (e){
 		var div = $(".header"); 
 		if (!div.is(e.target) && div.has(e.target).length === 0) { 
-			div.removeClass('opened');
+      div.removeClass('opened');
+      $('body').css('overflow' , 'auto');
 		}
 	});
 
