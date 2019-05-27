@@ -95,6 +95,15 @@
       }
     }
   }
+  .about-page {
+    font-size: 18px;
+    line-height: 1.4;
+    .main-info__col  {
+      &+.main-info__col  {
+        padding-right: 0;
+      }
+    }
+  }
 }
 @media (max-width: 991px) {
   .nav {
@@ -155,7 +164,7 @@
     font-size: 34px;
   }
   .main {
-    padding: 40px 0 10px;
+    padding: 100px 0 10px;
     &-page {
       .header {
         position: fixed;
@@ -169,7 +178,6 @@
     left: 0;
     right: 0;;
     height: 70px;
-    position: relative;
     z-index: 1;
     &-mobile {
       display: block;
@@ -194,7 +202,6 @@
       .header {
         &__right-content {
           left: 0;
-
         }
       }
     }
@@ -401,6 +408,24 @@
     &.main-info__holder {
       flex-wrap:wrap;
       margin-bottom: 20px;
+    }
+  }
+  .about {
+    &-page {
+      flex-wrap: wrap;
+      .main-info__col {
+        width: 100%;
+        padding-right: 0;
+      }
+      p {
+        max-width: 100%;
+      }
+      .bold-text {
+        margin: 50px 0 20px;
+      }
+      img {
+        margin-bottom: 20px;
+      }
     }
   }
 }

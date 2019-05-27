@@ -1110,3 +1110,65 @@ ul {
     fill: #032559;
   }
 }
+
+//about page
+.about {
+  &-page {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 31px;
+    p {
+      max-width: 522px;
+      margin: 0;
+      &.p {
+        margin-bottom: 40px;
+      }
+    }
+    ul {
+      max-width: 522px;
+      margin: 30px 0;
+    }
+    li {
+      text-indent: 15px;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $fontColor;
+        position: absolute;
+        left: 0%;
+        top: 12px;
+      }
+    }
+    .bold-text {
+      position: relative;
+      font-family: $ftgothamproMediumitalic;
+      max-width: 522px;
+      margin: 70px 0 30px;
+      display: block;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 65px;
+        height: 6px;
+        top: -30px;
+        left: 0;
+        background: $yellow;
+      }
+    }
+    .main-info__col {
+      padding-right: 20px;
+    }
+    .h1 {
+      margin-bottom: 30px;
+    }
+    img {
+      margin-bottom: 50px;
+    }
+  }
+
+}
