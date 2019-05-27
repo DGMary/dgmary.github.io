@@ -62,7 +62,10 @@ ul {
   appearance: none;
 }
 .main-page { 
-  position: relative; 
+  position: relative;
+  .main {
+    padding: 0;
+  } 
   .header {
     position: absolute;
     top: 0;
@@ -347,6 +350,7 @@ ul {
   }
 }
 .main {
+  padding: 80px 0 40px;
   &-info {
     &__holder {
       display: flex;
@@ -1037,4 +1041,72 @@ ul {
 
 
 
-
+// contact page
+.contact {
+ &__main {
+   a {
+    position:relative;
+    &:hover {
+      color: $colorGreen;
+    }
+   }
+   ul {
+     margin: 0;
+   }
+   li {
+     margin-bottom: 10px;
+   }
+  .main {
+    &-info {
+      &__row {
+        display:flex;
+        margin: 35px 0 25px;
+        padding: 0 10px 0 0;
+        &-social {
+          padding-top: 20px;
+        }
+        &-address {
+          padding: 4px 1px;
+        }
+        &-email {
+          margin-top:25px;
+          .icon__holder {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .icon {
+    &__holder {
+      width: 50px;
+      &-phone {
+        margin-top: 8px;
+      }
+      &-right {
+        padding-left :55px;
+        margin-top: -5px;
+        ul {
+          display: flex;
+        }
+        li {
+          width:40px;
+          margin:0 10px;
+        }
+      }
+    }
+  }
+ }
+ &__info {
+   &-holder {
+    width: calc(100% -50px);
+  }
+ }
+}
+.instagram,
+.facebook {
+  fill:#201F1F;
+  &:hover {
+    fill: #032559;
+  }
+}
