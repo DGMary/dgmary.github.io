@@ -649,6 +649,7 @@ ul {
     line-height: 1.5;
     display: flex;
     flex-wrap: wrap;
+    align-content:stretch;
     .icon {
       display: inline-block;
       width: 44px;
@@ -660,6 +661,7 @@ ul {
     }
   }
   &__item {
+    align-self: stretch;
     width: 376px;
     box-shadow: 5px 2px 15px rgba(5, 97, 101, 0.5);
     border-top: 6px solid $yellow;

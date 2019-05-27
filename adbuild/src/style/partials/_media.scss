@@ -71,7 +71,7 @@
   .service {
     &__item {
       min-width: 300px;
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
     &__title {
       font-size: 25px;
@@ -167,13 +167,19 @@
     padding: 100px 0 10px;
     &-page {
       .header {
-        position: fixed;
+        position: absolute;
+        background: none;
+      }
+      .main {
+        & > .section {
+          padding-top: 0;
+        }
       }
     }
   }
   .header {
     background: linear-gradient(134.38deg, rgba(2, 86, 133, 0.5) 48.19%, rgba(3, 126, 118, 0.13) 92.49%), #179799;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;;
