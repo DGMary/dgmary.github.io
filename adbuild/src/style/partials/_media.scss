@@ -504,8 +504,13 @@
   .advantage {
     &__info {
       max-width: 280px;
+      
+    }
+    &__item {
       &:first-child {
-        max-width: 220px;
+        .advantage__info {
+          max-width: 220px;
+        }
       }
     }
   }
