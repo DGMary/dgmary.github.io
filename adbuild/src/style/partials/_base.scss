@@ -570,6 +570,10 @@ ul {
   &-center {
     z-index: 1;
   }
+  &-track {
+    display: flex;
+    align-items: center;
+  }
 }
 .section {
   &__title {
@@ -610,7 +614,7 @@ ul {
   &__section {
     padding: 40px 0 100px;
     .slider__item {
-      padding: 10px 30px;
+      padding: 10px 35px;
       text-align: center;
     }
   }
