@@ -501,6 +501,11 @@
       transform: translateX(-100%);
     }
   }
+  .advantage {
+    &__info {
+      max-width: 280px;
+    }
+  }
 }
 
 @media (pointer: coarse) {
