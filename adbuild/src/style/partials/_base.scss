@@ -415,6 +415,14 @@ ul {
 .footer { 
   margin-top: 20px;
   color:$colorWhite;
+  .ic__link {
+    svg {
+      fill: $colorWhite;
+      &:hover {
+        fill: #01112A;
+      }
+    }
+  }
   a {
     color: $colorWhite;    
   }    
