@@ -1070,6 +1070,9 @@ ul {
         }
         &-address {
           padding: 4px 1px;
+          .icon__holder {
+            width: 40px;
+          }
         }
         &-email {
           margin-top:25px;
