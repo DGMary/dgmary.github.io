@@ -15,15 +15,6 @@ $(document).ready(function(){
   };  
   formThx ('#contact-form' , "modals/thx.html");
 
-  function scrollToForm(){
-    $(".to-form").on("click", function (event) {     
-      event.preventDefault(); 
-      var id  = $(this).data('href'),
-        top = $(id).offset().top;
-      $('body,html').animate({scrollTop: top}, 5);
-    });
-  };
-  scrollToForm();
 
   $('.burger-menu').on('click', function (e) {
     e.preventDefault();

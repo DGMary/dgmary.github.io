@@ -395,7 +395,7 @@ ul {
 .grid {  
   &-item {
     width: calc(100% / 3 ); 
-    padding: 20px 25px 45px;
+    padding: 20px 23px 45px;
 
    &__name {
      font-size: 18px;
@@ -631,7 +631,7 @@ ul {
   &__section {
     padding: 40px 0 100px;
     .slider__item {
-      padding: 10px 45px;
+      padding: 10px 50px;
       text-align: center;
     }
   }
@@ -1233,11 +1233,11 @@ ul {
     margin:20px 0;
   }
   &-container {
-    display: flex;
-    flex-wrap: wrap;
     .article {
       &__item {
-        width: calc(100% / 3);
+        &.first-child {
+          top:70px!important;
+        }
       }
     }
   }
