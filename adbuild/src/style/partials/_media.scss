@@ -544,6 +544,31 @@
       }
     }
   }
+  .partner {
+    &__section {      
+      .container {        
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .slider__item {
+        padding: 5px 15px;
+      }
+    }
+    &__slider {
+      padding-top: 40px;
+      .slick-list {
+        &:after {
+          content:"";
+          position: absolute;
+          width: 86px;
+          background: linear-gradient(270deg, #FFFFFF -36.88%, rgba(255, 255, 255, 0) 77.3%);
+          right: 0;
+          top:0;
+          bottom:0;
+        }
+      }
+    }
+  }
 }
 
 @media (pointer: coarse) {
