@@ -183,6 +183,9 @@
 // end 991
 
 @media (max-width: 767px) {
+  .nav {
+    padding-bottom: 20vh;
+  }
   .column {
     margin-bottom:20px;
     p {
@@ -219,6 +222,8 @@
       display: block;
     }
     &__right-content {
+      height: 100%;
+      overflow: auto;
       position: fixed;  
       width: 320px;
       top: 0;
