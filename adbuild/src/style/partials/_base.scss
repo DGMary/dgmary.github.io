@@ -1232,4 +1232,13 @@ ul {
   img {
     margin:20px 0;
   }
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    .article {
+      &__item {
+        width: calc(100% / 3);
+      }
+    }
+  }
 }
