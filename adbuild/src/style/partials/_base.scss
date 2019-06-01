@@ -391,7 +391,7 @@ ul {
 .grid {  
   &-item {
     width: calc(100% / 3 ); 
-    padding: 20px 23px 45px;
+    padding: 20px 0 45px;
 
    &__name {
      font-size: 18px;
@@ -1235,10 +1235,84 @@ ul {
   &-container {
     .article {
       &__item {
-        &.first-child {
-          top:70px!important;
-        }
+
       }
     }
   }
+}
+.article {
+  &__item {
+    padding-bottom: 30px;
+    & > * {
+      max-width: 370px;
+    }
+    .h1 {
+      margin: 0px 0 70px;
+    }
+  }
+  &__title {
+    font-size: 25px;
+    line-height: 32px;
+    font-family: $ftgothamproBold;
+    margin-bottom: 20px;
+  }
+  &__description {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  &__date {
+    color: #999999;
+    font-size: 18px;
+    width: 100%;
+    line-height: 35px;
+  }
+  &__info {
+    display: flex;
+  }
+  &__more {
+    color: $colorGreen;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  &__status {
+    position:absolute;
+    top:-12px;
+    display: inline-block;    
+    background: transparent;
+    right:-3px;
+    span {
+      font-size: 25px;
+      line-height: 35px;
+      display: inline-block;
+      vertical-align: middle;
+      background: $yellow;
+      height: 35px;
+      padding: 0 35px;
+      text-transform: lowercase;
+      &:after {
+        content:"";
+        background-image: url(/img/status-right.png);
+        height: 35px;
+        display: inline-block;
+        width: 10px;
+        margin-right: -45px;
+        background-repeat: no-repeat;
+      }
+      &:before {
+        content:"";
+        background-image: url(/img/status-left.png);
+        height: 35px;
+        display: inline-block;
+        width: 10px;
+        margin-left: -43px;
+        background-repeat: no-repeat;
+      }
+    }    
+  }
+  &__img {
+    position: relative;
+  }
+}
+.news-page {
+  padding-top: 40px;
 }
