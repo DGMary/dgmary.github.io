@@ -1273,44 +1273,61 @@ ul {
     color: $colorGreen;
     font-size: 18px;
     line-height: 35px;
+    position: relative;
+    &:hover:after {
+      width: 100%;
+    }
+    &:after {
+      display: block;
+      content: "";
+      margin-top:-6px;
+      height: 2px;
+      width: 0%;
+      -webkit-transition: width .4s ease-in-out;
+      transition: width .4s ease-in-out;
+      background:$colorGreen;
+    }
   }
   &__status {
     position:absolute;
     top:-12px;
     display: inline-block;    
     background: transparent;
-    right:-3px;
+    right:-8px;
     span {
       font-size: 25px;
       line-height: 35px;
       display: inline-block;
       vertical-align: middle;
       background: $yellow;
-      height: 35px;
-      padding: 0 35px;
+      padding: 0 15px;
       text-transform: lowercase;
+      position: relative;
       &:after {
         content:"";
+        position: absolute;
         background-image: url(/img/status-right.png);
         height: 35px;
         display: inline-block;
         width: 10px;
-        margin-right: -45px;
+        right: -9px;
         background-repeat: no-repeat;
       }
       &:before {
         content:"";
+        position: absolute;
         background-image: url(/img/status-left.png);
         height: 35px;
         display: inline-block;
         width: 10px;
-        margin-left: -43px;
+        left: -8px;
         background-repeat: no-repeat;
       }
     }    
   }
   &__img {
     position: relative;
+    margin-bottom: 22px;
   }
 }
 .news-page {

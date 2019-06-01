@@ -89,7 +89,8 @@ $(document).ready(function(){
 
 
   $('.grid').masonry({
-    itemSelector: '.grid-item'
+    itemSelector: '.grid-item',
+    percentPosition: true
   });
 
 
