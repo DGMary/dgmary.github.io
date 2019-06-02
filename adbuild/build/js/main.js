@@ -156,6 +156,25 @@ initModal();
     })
   }
 
+  $('.gallery-link').on('click', function () {
+    $(this).next().magnificPopup('open');
+  });
 
+  $('.popup-gallery').each(function () {
+      $(this).magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: {
+              enabled: true,
+              navigateByImgClick: true
+          },
+          image: {
+            titleSrc: function(item) {
+              return item.el.attr('title');
+            }
+        },
+          fixedContentPos: false
+      });
+  });
 
 })

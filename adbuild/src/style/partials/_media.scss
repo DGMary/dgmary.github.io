@@ -236,10 +236,6 @@
       }
     }
   }
-  .grid-item {
-    width: 100%;
-    margin: 0;
-  }
   .nav {
     padding-bottom: 20vh;
   }
@@ -631,8 +627,12 @@
       }
     }
   }
+  .grid-item {
+    width: 100%;
+    margin: 0;
+  }
 }
-@media (max-width: 374px) {
+@media (max-width: 330px) {
   .article {
     &__img {
       margin-left: -15px;

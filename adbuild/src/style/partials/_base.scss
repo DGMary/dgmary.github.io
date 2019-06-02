@@ -1333,3 +1333,22 @@ ul {
 .news-page {
   padding-top: 40px;
 }
+.mfp {
+  &-content {
+    background: $colorWhite;
+    padding: 15px 15px 45px 15px;
+  }
+  &-figure:after {
+    content: none;
+  }
+  &-title {
+    font-size: 18px;
+    line-height: 28px;
+    color:$fontColor;
+    text-align: center;
+    background: $colorWhite;
+  }
+}
+img.mfp-img {
+  padding: 0;
+}
