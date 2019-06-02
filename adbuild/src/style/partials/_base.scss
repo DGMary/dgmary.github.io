@@ -98,7 +98,6 @@ ul {
     color: $colorWhite;
   }
   .btn {
-    font-family: $ftgotham;
     height: 57px;
     &__holder {
       text-align: left;
@@ -532,22 +531,43 @@ ul {
   }
 }
 .btn {
+  font-family: $ftgotham;
   min-width: 280px;
   height: 62px;
   color: $footerColor;
   font-size: 20px;
+  line-height: 30px;
   border-radius: 5px;
-  background-color: $yellow;
-  border: none;
   outline: none;
   transition: .3s;
   cursor: pointer;
-  &:hover {
-    background-color: #FFC700;
-  }
   &__holder {
     text-align: center;
     margin: 55px auto 15px;
+  }
+  &-link {
+    border: 3px solid $colorGreen;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: $colorWhite;
+    &:hover {
+      background: $colorGreen;
+      color: $colorWhite;
+      .ic-arrow-right {
+        background-image: url(../img/arrow-right-active.png);
+      }
+    }
+  }
+  &-default {
+    background-color: $yellow;
+    border: none;
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+  &__center {
+    text-align: center;
+    padding: 20px 0;
   }
 }
 //footer end
@@ -925,6 +945,16 @@ ul {
     width: 44px;
     height: 44px;
     background-image: url(../img/ic-arrow.svg);
+    &-right {
+      display: inline-block;
+      width: 35px;
+      background-position: center right;
+      height: 15px;
+      line-height: 30px;
+      background-image: url(../img/arrow-right.png);
+      background-repeat: no-repeat;
+      vertical-align: middle;
+    }
   }
   &-ad {
     background-image: url(../img/ic-ad.svg);
