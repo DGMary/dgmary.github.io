@@ -1378,7 +1378,20 @@ ul {
     text-align: center;
     background: $colorWhite;
   }
+  &-image-holder .mfp-close {
+    right: -25px;
+    background-image: url(../img/close.png);
+    opacity: 1;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+    top:-20px;
+  }
+  &-zoom-out-cur {
+    cursor: default;
+  }
 }
 img.mfp-img {
   padding: 0;
 }
+
