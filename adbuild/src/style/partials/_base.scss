@@ -393,10 +393,7 @@ ul {
     padding: 20px 0 45px;
     &__img img {
       transition: .4s;
-      &:hover {
-        cursor: pointer;
-        box-shadow: 5px -1px 20px rgba(5, 97, 101, 0.65);
-      }
+      cursor: pointer;
     }
 
    &__name {
@@ -1371,6 +1368,12 @@ ul {
   padding-top: 40px;
 }
 .mfp {
+  &-container {
+    width: auto;
+    margin:  0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   &-content {
     background: $colorWhite;
     padding: 15px 15px 45px 15px;
@@ -1404,8 +1407,9 @@ ul {
     top: auto;
   }
   &-arrow-left {
+    left: -46px;
     &:hover {
-      background: rgba(255, 219, 46, 0.5);
+      background: rgba(255, 255, 255, 0.5);
     }
     &:after {
       border: none;
@@ -1427,8 +1431,9 @@ ul {
       margin-top: -55px;
     }
     &-right {
+      right: -46px;
       &:hover {
-        background: rgba(255, 219, 46, 0.5);
+        background: rgba(255, 255, 255, 0.5);
       }
       &:after {
         margin-left: 24px;
@@ -1452,3 +1457,17 @@ img.mfp-img {
   padding: 0;
 }
 
+.gallery-link {
+  cursor: pointer;
+  overflow: hidden;
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+.grid-item {
+  & > * {
+    max-width: 370px;
+  }
+}
