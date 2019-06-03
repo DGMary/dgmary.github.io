@@ -1398,9 +1398,13 @@ ul {
     background-repeat: no-repeat;
     background-position: top right;
     top:-16px;
+    cursor: pointer;
   }
   &-zoom-out-cur {
     cursor: default;
+    .mfp-image-holder .mfp-close {
+      cursor: pointer;
+    }
   }
   &-counter {
     bottom: -20px;
