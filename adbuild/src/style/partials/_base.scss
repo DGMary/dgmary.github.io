@@ -1367,6 +1367,7 @@ ul {
   &-content {
     background: $colorWhite;
     padding: 15px 15px 45px 15px;
+    max-height: 100vh;
   }
   &-figure:after {
     content: none;
@@ -1377,6 +1378,7 @@ ul {
     color:$fontColor;
     text-align: center;
     background: $colorWhite;
+    padding: 10px 15px;
   }
   &-image-holder .mfp-close {
     right: -25px;
@@ -1390,8 +1392,57 @@ ul {
   &-zoom-out-cur {
     cursor: default;
   }
+  &-counter {
+    bottom: -20px;
+    top: auto;
+  }
+  &-arrow-left {
+
+    &:hover {
+      background: rgba(255, 219, 46, 0.5);
+    }
+    &:after {
+      border: none;
+      background-image: url(/img/arrow-right-popup.svg);
+      width: 20px;
+      height: 34px;
+      transform: rotate(180deg);
+      background-repeat: no-repeat;
+      margin-left: 10px;
+    }
+    &:before {
+      border: none;
+    }
+  }
+  &-arrow {
+    width: 54px;
+    opacity:1;
+    &:active {
+      margin-top: -55px;
+    }
+    &-right {
+      &:hover {
+        background: rgba(255, 219, 46, 0.5);
+      }
+      &:after {
+        margin-left: 24px;
+        border: none;
+        background-image: url(/img/arrow-right-popup.svg);
+        width: 20px;
+        height: 34px;
+        background-repeat: no-repeat;
+      }
+      &:before {
+        border:none;
+      }
+    }
+  }
 }
 img.mfp-img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  line-height: 0;
   padding: 0;
 }
 
