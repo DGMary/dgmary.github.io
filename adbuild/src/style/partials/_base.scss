@@ -1403,7 +1403,7 @@ ul {
     }
     &:after {
       border: none;
-      background-image: url(img/arrow-right-popup.svg);
+      background-image: url(../img/arrow-right-popup.svg);
       width: 20px;
       height: 34px;
       transform: rotate(180deg);
@@ -1427,7 +1427,7 @@ ul {
       &:after {
         margin-left: 24px;
         border: none;
-        background-image: url(img/arrow-right-popup.svg);
+        background-image: url(../img/arrow-right-popup.svg);
         width: 20px;
         height: 34px;
         background-repeat: no-repeat;
