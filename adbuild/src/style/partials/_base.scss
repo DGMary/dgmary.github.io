@@ -1408,9 +1408,6 @@ ul {
   }
   &-arrow-left {
     left: -46px;
-    &:hover {
-      background: rgba(255, 255, 255, 0.5);
-    }
     &:after {
       border: none;
       background-image: url(../img/arrow-right-popup.svg);
@@ -1432,9 +1429,6 @@ ul {
     }
     &-right {
       right: -46px;
-      &:hover {
-        background: rgba(255, 255, 255, 0.5);
-      }
       &:after {
         margin-left: 19px;
         border: none;
@@ -1457,7 +1451,7 @@ img.mfp-img {
   padding: 0;
 }
 
-.gallery-link {
+.grid-item__img {
   cursor: pointer;
   overflow: hidden;
   &:hover {

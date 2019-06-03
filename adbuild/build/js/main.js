@@ -176,18 +176,4 @@ initModal();
           fixedContentPos: false
       });
   });
-
-//   $('.popup-content').magnificPopup({
-//     callbacks: {
-//         open: function() {
-//             $('.slider-galler').slick({
-//                 autoplay: false,
-//                 autoplaySpeed: 4000,
-//                 speed: 1000,
-//                 arrows: true
-//             });
-//         }
-//     }
-// });
-
 })

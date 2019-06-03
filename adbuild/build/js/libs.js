@@ -798,7 +798,7 @@
 							selectbox.addClass(liSelected.data('jqfs-class'));
 						}
 
-						// если селект неактивный
+						// ��сли селект неактивный
 						if (el.is(':disabled')) {
 							selectbox.addClass('disabled');
 							return false;
