@@ -408,12 +408,14 @@ ul {
   margin-top: 20px;
   color:$colorWhite;
   .ic__link {
+    &:hover {
+        svg {
+          fill:#000000;
+        }
+    }
     svg {
       fill: $colorWhite;
-      transition: .3s;
-      &:hover {
-        fill: #01112A;
-      }
+      transition: .3s;     
     }
   }
   a {
