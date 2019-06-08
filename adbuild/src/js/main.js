@@ -186,6 +186,12 @@ function initSlickMagnificPopup(){
       arrows: false,
       infinite: false
     });
+    setTimeout(function() {
+      $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true
+      });
+    }, 0);
     var sliderIsLive = false;
   } else {
     $('.gallery-link').on('click', function () {
