@@ -1427,7 +1427,10 @@ ul {
   }
   &-arrow {
     width: 54px;
-    opacity:1;
+    opacity:.7;
+    &:hover {
+      opacity: 1;
+    }
     &:active {
       margin-top: -55px;
     }
@@ -1458,14 +1461,27 @@ img.mfp-img {
 .grid-item__img {
   cursor: pointer;
   overflow: hidden;
-  &:hover {
-    img {
-      transform: scale(1.1);
-    }
-  }
 }
 .grid-item {
   & > * {
     max-width: 370px;
   }
+}
+.gallery-link {
+  transition: .4s;
+  &:hover {
+    img {
+      transform: scale(1.1)
+    }
+  }
+}
+.popup-gallery img {
+  display: none;
+}
+.grid-item {
+  position: relative;
+  z-index: 2;
+}
+.slick-dots {
+  display: none;
 }
