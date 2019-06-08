@@ -558,8 +558,10 @@ ul {
   &-default {
     background-color: $yellow;
     border: none;
+    transition: .3s;
     &:hover {
-      background-color: $yellow;
+      background-color: #FFC700;
+      color:#032559;
     }
   }
   &__center {
