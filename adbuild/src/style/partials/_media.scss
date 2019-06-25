@@ -226,8 +226,10 @@
   }
   .header {
     &__right-content {
-      flex-wrap: wrap;
       width: calc(100% - 160px);
+      &-holder {
+        flex-wrap: wrap;      
+      }
     }
   }
   .service {
@@ -382,10 +384,10 @@
   .list {
     &__items {
       flex-direction: column;
-      margin: 100px 10px 10px 34px;
+      margin: 40px 10px 10px 34px;
     }
     &__item {
-      line-height: 50px;
+      line-height: 40px;
     }
   }
   .phone__holder {
@@ -396,6 +398,9 @@
     display: block;
     width: 100%;
     padding-left: 34px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
   .languages  {
     display: flex;
@@ -692,6 +697,12 @@
       width: 100%;
       left: 0;
       transform: translateX(-100%);
+      &-holder {
+        width: 100%;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        margin-top: 60px;
+      }
     }
   }
   .advantage {

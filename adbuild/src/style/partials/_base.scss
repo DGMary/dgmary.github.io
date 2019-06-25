@@ -138,10 +138,13 @@ ul {
     padding:10px 0 0;
   }
   &__right-content {
-    width: calc(100% - 190px); 
-    display:flex;
-    align-items:center;  
-    justify-content: flex-end; 
+    width: calc(100% - 190px);
+
+    &-holder {
+      display:flex;
+      align-items:center;  
+      justify-content: flex-end; 
+    }
   }
 }
 .list {
@@ -302,10 +305,11 @@ ul {
 }
 .opened {
   .burger-menu {
+    width: 25px;
     span {
       &:nth-child(1) {
         transform: rotate(45deg);
-        top: -3px;
+        top: 0;
         left: 2px;
       }
       &:nth-child(2) {
@@ -314,7 +318,7 @@ ul {
       }
       &:nth-child(3) {
         transform: rotate(-45deg);
-        top: 20px;
+        top: 18px;
         left: 1px;
       }
     }
