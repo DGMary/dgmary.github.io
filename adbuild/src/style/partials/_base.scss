@@ -1359,6 +1359,15 @@ ul {
   &__img {
     position: relative;
     margin-bottom: 22px;
+    overflow: hidden;
+    img {
+      transition: .4s;
+    }
+    a:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
   }
 }
 .news-page {

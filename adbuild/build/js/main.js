@@ -87,14 +87,6 @@ $(document).ready(function(){
     }
 });
 
-
-  $('.grid').masonry({
-    itemSelector: '.grid-item',
-    percentPosition: true
-  });
-
-
-
   var baseMapLayer = new ol.layer.Tile({
     source: new ol.source.OSM()
   });
@@ -176,6 +168,9 @@ initModal();
   
 });
 
+
+
+
 function initSlickMagnificPopup(){
   if($(window).width() < 768) {
     $('.popup-gallery').off('click');
@@ -207,3 +202,12 @@ $(window).on('resize' , function() {
   console.log()
   initSlickMagnificPopup()
 })
+
+
+
+$( window ).on('load',function() {
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true
+  });
+});
