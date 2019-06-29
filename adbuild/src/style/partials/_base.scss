@@ -399,6 +399,12 @@ ul {
      font-size: 18px;
      line-height: 1.5;
      padding: 15px 0;
+     a {
+       transition: .3s;
+       &:hover {
+         opacity: .9;
+       }
+     }
    }
  
  }
@@ -1292,6 +1298,12 @@ ul {
     line-height: 32px;
     font-family: $ftgothamproBold;
     margin-bottom: 20px;
+    a {
+      transition: .3s;
+      &:hover {
+        opacity: .9;
+      }
+    }
   }
   &__description {
     font-size: 20px;
@@ -1365,7 +1377,10 @@ ul {
   &__img {
     position: relative;
     margin-bottom: 22px;
-    overflow: hidden;
+    & > a {
+      overflow: hidden;
+      display: block;
+    }    
     img {
       transition: .4s;
     }
@@ -1492,7 +1507,7 @@ img.mfp-img {
 }
 .grid-item {
   position: relative;
-  z-index: 2;
+  // z-index: 2;
 }
 .slick-dots {
   display: none;
