@@ -1355,7 +1355,7 @@ ul {
       &:after {
         content:"";
         position: absolute;
-        background-image: url(/img/status-right.png);
+        background-image: url(../img/status-right.png);
         height: 35px;
         display: inline-block;
         width: 10px;
@@ -1365,7 +1365,7 @@ ul {
       &:before {
         content:"";
         position: absolute;
-        background-image: url(/img/status-left.png);
+        background-image: url(../img/status-left.png);
         height: 35px;
         display: inline-block;
         width: 10px;
