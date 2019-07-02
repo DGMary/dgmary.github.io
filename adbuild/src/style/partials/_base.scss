@@ -392,7 +392,6 @@ ul {
     padding: 20px 0 45px;
     &__img img {
       transition: .4s;
-      cursor: pointer;
     }
 
    &__name {
@@ -1493,8 +1492,10 @@ img.mfp-img {
 }
 
 .grid-item__img {
-  cursor: pointer;
   overflow: hidden;
+  &.gallery-link {
+    cursor: pointer;
+  }
 }
 .grid-item {
   & > * {
