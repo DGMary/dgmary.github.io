@@ -381,7 +381,7 @@
   .list {
     &__items {
       flex-direction: column;
-      margin: 40px 10px 10px 34px;
+      margin: 50px 10px 10px 34px;
     }
     &__item {
       line-height: 40px;
@@ -744,6 +744,10 @@
     width: 100%;
     margin: 0;
   }
+  .list__item-link:after,
+  .list__item-link:hover:after {
+    content: none;
+  }
 }
 @media (max-width: 330px) {
   .article {
@@ -755,10 +759,15 @@
     &__item {
       padding-bottom: 10px;
     }
+    &__status {
+      right: 10px;
+      top:-20px;
+    }
   }
   .footer {
     margin-top: 0;
   }
+  
 }
 
 @media (pointer: coarse) {
@@ -776,7 +785,16 @@
   }
   .btn {
     &:hover {
-      background-color: $yellow;
+      background-color: transparent;
+      color:inherit;
     }
   }
+  .list__item-link:after,
+  .list__item-link:hover:after {
+    content: none;
+  }
+  .btn-link:hover .ic-arrow-right {
+    background-image: url(../img/arrow-right.png);
+  }
 }
+
