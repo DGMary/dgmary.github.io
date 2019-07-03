@@ -185,6 +185,10 @@ ul {
   margin:0 30px;
   font-family:$ftgothamproBlack;
   transition: .3s;
+
+}
+.header.opened .phone__holder,
+.main-page .phone__holder {
   color:$colorWhite;
 }
 .languages {
