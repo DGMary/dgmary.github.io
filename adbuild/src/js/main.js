@@ -166,7 +166,16 @@ initModal();
   });
   initSlickMagnificPopup()
   
-});
+  $('.popup-one-img').magnificPopup({
+    disableOn: 768,
+    type: 'image'  
+  });
+
+  
+  $('.popup-one-img').on('click' , function(e){e.preventDefault()});
+  
+
+}); //end document-ready
 
 
 

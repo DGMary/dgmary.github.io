@@ -185,6 +185,7 @@ ul {
   margin:0 30px;
   font-family:$ftgothamproBlack;
   transition: .3s;
+  color:$colorWhite;
 }
 .languages {
   .copy {
@@ -1503,10 +1504,11 @@ img.mfp-img {
   }
 }
 .gallery-link {
-  transition: .4s;
+  transition: .6s;
   &:hover {
     img {
-      transform: scale(1.1)
+      transform: scale(1.1);
+      transition: .6s;
     }
   }
 }
@@ -1527,5 +1529,12 @@ img.mfp-img {
   }
   .img-holder {
     margin-top: -20px;
+  }
+}
+.popup-one-img:hover {
+  img {
+    transform: scale(1.1);
+    -webkit-transition: .6s;
+    transition: .6s;
   }
 }

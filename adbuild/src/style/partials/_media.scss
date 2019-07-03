@@ -603,6 +603,14 @@
       }
     }
   }
+  .popup-one-img {
+    pointer-events: none;
+  }
+  .popup-one-img:hover img,
+  .article__img a:hover img,
+  .gallery-link:hover img {
+    transform: scale(1);
+  }
 }
 // end 767
 
@@ -795,6 +803,14 @@
   }
   .btn-link:hover .ic-arrow-right {
     background-image: url(../img/arrow-right.png);
+  }
+  .popup-one-img {
+    pointer-events: none;
+  }
+  .popup-one-img:hover img,
+  .article__img a:hover img,
+  .gallery-link:hover img {
+    transform: scale(1);
   }
 }
 
